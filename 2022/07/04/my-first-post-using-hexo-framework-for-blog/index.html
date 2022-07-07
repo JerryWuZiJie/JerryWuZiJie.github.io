@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"jerrywuzijie.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.2","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":{"enable":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"jerrywuzijie.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.2","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":{"enable":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="First post, setting up Hexo">
 <meta property="og:type" content="article">
@@ -117,7 +117,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Setup-Hexo"><span class="nav-number">1.</span> <span class="nav-text">Setup Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Install"><span class="nav-number">1.1.</span> <span class="nav-text">Install</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Usage"><span class="nav-number">1.2.</span> <span class="nav-text">Usage</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">2.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#setup-hexo"><span class="nav-number">1.</span> <span class="nav-text">Setup Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#install"><span class="nav-number">1.1.</span> <span class="nav-text">Install</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#usage"><span class="nav-number">1.2.</span> <span class="nav-text">Usage</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#reference"><span class="nav-number">2.</span> <span class="nav-text">Reference</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -132,7 +132,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -228,6 +228,20 @@
     </span>
 
   
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2022/07/04/My-first-post-using-hexo-framework-for-blog/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2022/07/04/My-first-post-using-hexo-framework-for-blog/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 </div>
 
             <div class="post-description">First post, setting up Hexo</div>
@@ -238,46 +252,69 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>Hi, this is Jerry (Zijie) Wu! I decided to start writing blogs. And after some quick research, I found that hexo seems to fit my needs. It can be deployed on GitHub so I don’t have to rent a server. I’ve also considered using LinkedIn as a blog platform, but seems like not many people are doing that and it doesn’t look “geeky.”</p>
-<p>I will mainly use the blog to write about things related to my major (Electrical and Computer Engineering) and hope to share my knowledge and experience with others (if anyone ever visits).</p>
-<h2 id="Setup-Hexo"><a href="#Setup-Hexo" class="headerlink" title="Setup Hexo"></a>Setup Hexo</h2><p>In the following, I will briefly talk about how to set up Hexo and deploy it on GitHub and how to use it.</p>
-<h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><ol>
-<li><p>install node.js</p>
-</li>
+        <p>Hi, this is Jerry (Zijie) Wu! I decided to start writing blogs. And
+after some quick research, I found that hexo seems to fit my needs. It
+can be deployed on GitHub so I don't have to rent a server. I've also
+considered using LinkedIn as a blog platform, but seems like not many
+people are doing that and it doesn't look "geeky."</p>
+<p>I will mainly use the blog to write about things related to my major
+(Electrical and Computer Engineering) and hope to share my knowledge and
+experience with others (if anyone ever visits).</p>
+<h2 id="setup-hexo">Setup Hexo</h2>
+<p>In the following, I will briefly talk about how to set up Hexo and
+deploy it on GitHub and how to use it.</p>
+<h3 id="install">Install</h3>
+<ol type="1">
+<li><p>install node.js</p></li>
 <li><p>open terminal</p>
-<ol>
+<ol type="1">
 <li><code>npm install hexo-cli -g</code> to install hexo</li>
-<li><code>mkdir</code><em><code>directory</code></em> to create a new directory for a new Hexo project</li>
-<li><code>cd</code><em><code>directory</code></em> to enter the new directory</li>
+<li><code>mkdir</code><em><code>directory</code></em> to create a new
+directory for a new Hexo project</li>
+<li><code>cd</code><em><code>directory</code></em> to enter the new
+directory</li>
 <li><code>hexo init</code> to initialize a new Hexo project</li>
-<li><code>hexo server</code> to start a server on a local host (hexo s for short)</li>
-<li><code>hexo new</code><em><code>post_name</code></em> to create a new post (hexo n for short)</li>
+<li><code>hexo server</code> to start a server on a local host (hexo s
+for short)</li>
+<li><code>hexo new</code><em><code>post_name</code></em> to create a new
+post (hexo n for short)</li>
 <li><code>hexo clean</code> to clean the static files</li>
 <li><code>hexo generate</code> to generate new static files</li>
-<li><code>npm install hexo-deployer-git --save</code> to install the git deployer</li>
+<li><code>npm install hexo-deployer-git --save</code> to install the git
+deployer</li>
+</ol></li>
+<li><p>create a new repository on GitHub, the name must be
+<code>githubusername.github.io</code></p></li>
+<li><p>in the _config.yml file, and modify the <strong>deploy</strong>**
+section:</p>
+<p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">https://oauth2:yourtoken@github.com/*****.github.io</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure></p></li>
+<li><p>run <code>hexo deploy</code> in terminal to deploy to GitHub
+(hexo d for short)</p></li>
+<li><p>now you can access your blog at
+<code>https://githubusername.github.io</code> (wait for a few minutes if
+it doesn't work)</p></li>
 </ol>
-</li>
-<li><p>create a new repository on GitHub, the name must be <code>githubusername.github.io</code></p>
-</li>
-<li><p>in the _config.yml file, and modify the <strong>deploy</strong>** section:</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">https://oauth2:yourtoken@github.com/*****.github.io</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure></li>
-<li><p>run <code>hexo deploy</code> in terminal to deploy to GitHub (hexo d for short)</p>
-</li>
-<li><p>now you can access your blog at <code>https://githubusername.github.io</code> (wait for a few minutes if it doesn’t work)</p>
-</li>
-</ol>
-<h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><ul>
-<li><code>hexo n &quot;title&quot;</code>: create a new post</li>
+<h3 id="usage">Usage</h3>
+<ul>
+<li><code>hexo n "title"</code>: create a new post</li>
 <li><code>hexo s</code>: start a server in a local host</li>
 <li><code>hexo c</code>: clean the static files</li>
 <li><code>hexo g</code>: generate the static files</li>
 <li><code>hexo d</code>: deploy to GitHub</li>
 </ul>
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Yb411a7ty?spm_id_from=333.999.0.0&vd_source=99a1bb3a7187eeea1a5ee8e957c968a7">Step-by-step Hexo installation guide (Chinese)</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=Kt7u5kr_P5o&list=PLLAZ4kZ9dFpOMJR6D25ishrSedvsguVSm">Hexo Youtube Tutorial</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.markdownguide.org/basic-syntax/">Markdown Basic Syntax</a></li>
-<li><a target="_blank" rel="noopener" href="https://chrismroberts.com/2020/01/06/using-markdown-in-hexo-to-add-images/">Adding Images to Hexo Posts with Markdown</a></li>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a
+target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Yb411a7ty?spm_id_from=333.999.0.0&amp;vd_source=99a1bb3a7187eeea1a5ee8e957c968a7">Step-by-step
+Hexo installation guide (Chinese)</a></li>
+<li><a
+target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=Kt7u5kr_P5o&amp;list=PLLAZ4kZ9dFpOMJR6D25ishrSedvsguVSm">Hexo
+Youtube Tutorial</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.markdownguide.org/basic-syntax/">Markdown Basic
+Syntax</a></li>
+<li><a
+target="_blank" rel="noopener" href="https://chrismroberts.com/2020/01/06/using-markdown-in-hexo-to-add-images/">Adding
+Images to Hexo Posts with Markdown</a></li>
 </ul>
 
     </div>
@@ -339,6 +376,11 @@
 
 
 
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
 </div>
   </main>
 
@@ -350,7 +392,7 @@
   &copy; 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-gears"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Jerry (Zijie) Wu</span>
 </div>
@@ -373,6 +415,14 @@
 
 
 
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"ams","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"jerry-wu-blog","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/js/third-party/comments/disqus.js"></script>
 
 </body>
 </html>

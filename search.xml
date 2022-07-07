@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hexo theme: NexT</title>
+    <url>/2022/07/07/Hexo-theme-next/</url>
+    <content><![CDATA[<h2 id="install">install</h2>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+<h2 id="upgrade">upgrade</h2>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git pull origin master  <span class="comment"># (inside the next folder)</span></span><br></pre></td></tr></table></figure>
+<h2 id="configuration">configuration</h2>
+<h3 id="in-_config.yml-under-the-root-folder">In _config.yml under the
+root folder</h3>
+<ul>
+<li>change theme to NexT: change
+<code>theme:</code><em><code>theme</code></em> in _config.yml to
+<code>theme: next</code></li>
+</ul>
+<h3 id="in-_config.yml-under-next-folder">In _config.yml under next
+folder</h3>
+<h4 id="scheme-settings">Scheme Settings</h4>
+<ul>
+<li>change NexT theme:</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Schemes</span></span><br><span class="line"><span class="comment"># scheme: Muse</span></span><br><span class="line"><span class="comment"># scheme: Mist</span></span><br><span class="line"><span class="comment"># scheme: Pisces</span></span><br><span class="line"><span class="attr">scheme:</span> <span class="string">Gemini</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>darkmode: <code>darkmode: true</code></li>
+</ul>
+<h4 id="site-information-settings">Site Information Settings</h4>
+<ul>
+<li><p>icon: put icon under source/<em>custom_folder</em></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">favicon:</span></span><br><span class="line">    <span class="attr">small:</span> <span class="string">/custom_folder/favicon-16x16.png</span></span><br><span class="line">    <span class="attr">medium:</span> <span class="string">/custom_folder/favicon-32x32.png</span></span><br><span class="line">    <span class="attr">apple_touch_icon:</span> <span class="string">/custom_folder/apple-touch-icon.png</span></span><br><span class="line">    <span class="comment"># safari_pinned_tab: /images/logo.svg</span></span><br><span class="line">    <span class="comment"># android_manifest: /manifest.json</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>one can use <a href="https://realfavicongenerator.net/">this site</a>
+to generate icons</p>
+<h4 id="menu-settings">Menu Settings</h4>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">    <span class="comment"># Key: /link/ || icon</span></span><br><span class="line">    <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-home</span></span><br><span class="line">    <span class="attr">about:</span> <span class="string">/about/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-user</span></span><br><span class="line">    <span class="attr">tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-tags</span></span><br><span class="line">    <span class="attr">categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-th</span></span><br><span class="line">    <span class="attr">archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-archive</span></span><br></pre></td></tr></table></figure>
+<p>Except for home and archives, all custom pages under the menu section
+need to be created <a
+href="https://theme-next.js.org/docs/theme-settings/custom-pages.html">manually</a></p>
+<ul>
+<li>Adding tags
+<ol type="1">
+<li><code>hexo n page tags</code></li>
+<li>add <code>type: tags</code> to front matter</li>
+<li>edit <em>custom-name</em>/index.md to change content</li>
+</ol></li>
+<li>Adding categories: similar to tags</li>
+<li>Adding Google Canlendar: check <a
+href="https://theme-next.js.org/docs/theme-settings/custom-pages.html#Adding-Google-Calendar-Page">here</a></li>
+<li>Adding 404 page:
+<ol type="1">
+<li><code>hexo n page 404</code></li>
+<li>set <code>relative_link: false</code> in root/_config.yml</li>
+</ol></li>
+<li>Adding others
+<ol type="1">
+<li><code>hexo n page</code><em><code>custom-name</code></em></li>
+<li>edit front matter</li>
+<li>edit <em>custom-name</em>/index.md to change content (can also use
+index.html instead of index.md)</li>
+</ol></li>
+</ul>
+<p>icons are from <a href="https://fontawesome.com/">Font
+Awesome</a></p>
+<p>You can display/hide icons and badges by setting the followings:</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">menu_settings:</span></span><br><span class="line">    <span class="attr">icons:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">badges:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h4 id="sidebar-settings">Sidebar Settings</h4>
+<ul>
+<li><p>avatar: <code>avatar: url: /NexT_icon/avatar.png</code></p></li>
+<li><p>social: name: link || icon</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">social:</span></span><br><span class="line">    <span class="attr">GitHub:</span> <span class="string">https://github.com/yourname</span> <span class="string">||</span> <span class="string">fab</span> <span class="string">fa-github</span></span><br><span class="line">    <span class="attr">E-Mail:</span> <span class="string">mailto:yourname@gmail.com</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-envelope</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="footer">footer</h4>
+<ul>
+<li>since <em>year</em>: display <em>year</em> to the current year</li>
+<li>icon:
+<ul>
+<li>name: link to <a href="https://fontawesome.com/">Font
+Awesome</a></li>
+<li>animated</li>
+<li>color: in HEX code</li>
+</ul></li>
+<li>copyright: if none, will use the author's name</li>
+<li>powered: whether to show "Powered by Hexo &amp; NexT"</li>
+</ul>
+<h4 id="post">post</h4>
+<ul>
+<li><p>preamble text</p>
+<ul>
+<li>write <span id="more"></span> to break article manually</li>
+<li>enable <code>excerpt_description: true</code> and have a
+<code>description</code> field in front matter to display the
+excerpt</li>
+<li>without the previous two, the whole post will be considered as a
+preamble and displayed</li>
+</ul></li>
+<li><p><code>tag_icon: true</code>: use tag icon instead of #</p></li>
+<li><p>donate</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">reward_settings:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="attr">reward:</span></span><br><span class="line">    <span class="attr">wechatpay:</span> <span class="string">/NexT_icon/wechatpay.jpg</span></span><br><span class="line">    <span class="attr">alipay:</span> <span class="string">/NexT_icon/alipay.jpg</span></span><br><span class="line">    <span class="attr">paypal:</span> <span class="string">/NexT_icon/paypal.png</span></span><br></pre></td></tr></table></figure></li>
+<li><p>follow me (self-explanatory)</p></li>
+<li><p><code>post_edit</code>: enable editing source code (if one pushes
+source code to GitHub)</p></li>
+<li><p><code>post_navigation: left</code>: older post is on the
+left</p></li>
+</ul>
+<h4 id="misc">misc</h4>
+<ul>
+<li><code>preconnect: true</code>: Initiating an early connection</li>
+<li><code>mobile_layout_economy: true</code>: reduce margin on device
+with narrow width</li>
+<li><code>codeblock.copy_button.enable: true</code>: enable copy
+button</li>
+<li><code>back2top: enable: true</code>: enable back to top button</li>
+</ul>
+<h4 id="font-setting-self-explanatory">font setting
+(self-explanatory)</h4>
+<h4 id="search-engine-optimization-seo">search engine optimization
+(SEO)</h4>
+<ol type="1">
+<li>go to verification methods and choose HTML Tag</li>
+<li>get
+<code>&lt;meta name="verification" content="XXXXXXXXXXXXXXXXXXXXXXX"&gt;</code></li>
+<li>copy <code>XXXXXXXXXXXXXXXXXXXXXXX</code> to the verification
+field</li>
+</ol>
+<h2 id="third-party-services">Third-party services</h2>
+<h3 id="math-equations">Math Equations</h3>
+<h4 id="setting">Setting</h4>
+<ul>
+<li><p><code>every_page: false</code>: will not render page unless the
+front matter has <code>mathjax: true</code></p></li>
+<li><p><code>mathjax</code>: more powerful than the <code>katex</code>
+option but slower</p>
+<ul>
+<li><code>enable: true</code>: enable mathjax</li>
+<li><code>tags: ams</code>: automatic equaiton numbering if surround by
+<code>\begin&#123;xxx&#125; ... \end&#123;xxx&#125;</code> block</li>
+</ul></li>
+</ul>
+<h4 id="prerequisite">prerequisite</h4>
+<p>install <a href="https://pandoc.org/installing.html">pandoc</a>
+install <code>hexo-renderer-pandoc</code>:</p>
+<p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># inside the hexo blog folder</span></span><br><span class="line">$ npm un hexo-renderer-marked</span><br><span class="line">$ npm i hexo-renderer-pandoc</span><br><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure></p>
+<h4 id="examples"><a
+href="https://theme-next.js.org/docs/third-party-services/math-equations.html#Examples">Examples</a></h4>
+<p>Equation without ams: <span class="math display">\[ x = {-b \pm
+\sqrt{b^2-4ac} \over 2a} \]</span></p>
+<hr />
+<p>Equation with ams: <span class="math display">\[\begin{equation}
+x = {-b \pm \sqrt{b^2-4ac} \over 2a}
+\end{equation}\]</span></p>
+<hr />
+<p>Equaiton with tag <span class="math display">\[ x = {-b \pm
+\sqrt{b^2-4ac} \over 2a} \tag{custom tag}\]</span></p>
+<hr />
+<p>Equation with label (must have either ams or tag): <span
+class="math display">\[\begin{equation} \label{eq1}
+x = {-b \pm \sqrt{b^2-4ac} \over 2a}
+\end{equation}\]</span> and then use <code>$\eqref&#123;label_name&#125;$</code>
+to reference the equation <span
+class="math inline">\(\eqref{eq1}\)</span></p>
+<hr />
+<p>Multi-line equation with one ams: <span
+class="math display">\[\begin{equation} \label{eq2}
+\begin{aligned}
+x &amp;= +{-b \pm \sqrt{b^2-4ac} \over 2a} \\
+  &amp;= -{-b \pm \sqrt{b^2-4ac} \over 2a}
+\end{aligned}
+\end{equation}\]</span></p>
+<hr />
+<p>Multi-line equation with multiple ams: <span
+class="math display">\[\begin{align}
+x &amp;= +{-b \pm \sqrt{b^2-4ac} \over 2a} \\
+  &amp;= -{-b \pm \sqrt{b^2-4ac} \over 2a}
+\end{align}\]</span></p>
+<hr />
+<p>Multi-line equation with multiple ams and certain line without
+number: <span class="math display">\[\begin{align}
+x &amp;= +{-b \pm \sqrt{b^2-4ac} \over 2a} \nonumber \\
+  &amp;= -{-b \pm \sqrt{b^2-4ac} \over 2a}
+\end{align}\]</span></p>
+<h3 id="comment-systems">Comment Systems</h3>
+<ul>
+<li><code>lazyload: true</code>: don't load the comment system until
+needed</li>
+<li>disable comments on certain posts: in the front matter, include
+<code>comments: false</code></li>
+</ul>
+<h4 id="disqus-directly-quoted-from-here">Disqus (directly quoted from
+<a
+href="https://theme-next.js.org/docs/third-party-services/comments.html#Disqus">here</a>)</h4>
+<p>Disqus is a global comment system that improves discussion on
+websites and connects conversations across the web.</p>
+<ol type="1">
+<li><p>Create an account and log into <a
+href="https://disqus.com/">Disqus</a>. Once logged in, click the
+<code>GET STARTED</code> button on the homepage, then select
+<code>I want to install Disqus on my site</code> option and you will see
+the <code>Create a new site</code> interface.</p></li>
+<li><p>Enter your <code>Website Name</code>, which will serve as your
+Disqus shortname, and select a Category from the drop-down menu. Then
+click <code>Create Site</code> button.</p></li>
+<li><p>Choose
+<code>I don't see my platform listed, install manually with Universal Code</code>,
+configure Disqus for your site, and click <code>Complete Setup</code>
+button.</p></li>
+<li><p>Set the value <code>enable</code> to <code>true</code>, add the
+obtained Disqus shortname (<code>shortname</code>), and edit other
+configurations in <code>disqus</code> section in the <mark class="label primary">NexT config file</mark> as
+following:</p>
+<p><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">disqus:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">shortname:</span> <span class="string">your-short-disqus-name</span></span><br><span class="line">  <span class="attr">count:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></p></li>
+</ol>
+<h2 id="analytics"><a
+href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics.html#Google-Analytics">Analytics</a></h2>
+<ul>
+<li><p>make sure you config the <code>url</code> in the hexo _config.yml
+file</p></li>
+<li><p>Google Analytics:</p>
+<ul>
+<li>create an account</li>
+<li>edit tracking_id field, fill with <code>MEASUREMENT ID</code></li>
+<li>others are similar</li>
+</ul></li>
+</ul>
+<h2 id="search-services">Search Services</h2>
+<ol type="1">
+<li><p><code>$ npm install hexo-generator-searchdb</code></p></li>
+<li><p>edit hexo _config.yml file and add the followings</p>
+<p><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br></pre></td></tr></table></figure></p></li>
+<li><p>edit next _config.yml file</p>
+<ul>
+<li><code>local_search.enable: true</code>: enable local search</li>
+<li><code>local_search.top_n_per_article: -1</code>: show all results
+per article</li>
+</ul></li>
+</ol>
+<h2 id="chat-services">Chat Services</h2>
+<h3 id="chatra">Chatra</h3>
+<ol type="1">
+<li>Visit <a href="https://app.chatra.io/">Chatra</a> and create an
+account</li>
+<li>edit <code>chatra.enable: true</code> and fill in your
+<code>chatra.id</code> in Chatra -&gt; Settings -&gt; Preferences -&gt;
+Public key</li>
+</ol>
+<h2 id="external-libraries">External Libraries</h2>
+<ul>
+<li>Pjax delivers a fast browsing experience</li>
+<li>Fancybox/Medium Zoom allows image zoom in, while Fancybox also
+supports videos</li>
+<li>lazyload will not load the image until needed. Run
+<code>hexo clean</code> once change this setting</li>
+<li>Quicklink enables preloading and speeds up subsequent
+page-loads</li>
+<li>motion allows animation, disable it to run faster. Check all effects
+<a href="https://theme-next.js.org/animate/">here</a></li>
+</ul>
+<h2 id="tag-plugins">Tag Plugins</h2>
+<p>NexT has its own <a
+href="https://theme-next.js.org/docs/tag-plugins/">tag plugins</a>
+beside Hexo</p>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a
+href="https://www.youtube.com/watch?v=Kt7u5kr_P5o&amp;list=PLLAZ4kZ9dFpOMJR6D25ishrSedvsguVSm">Hexo
+Youtube Tutorial</a></li>
+<li><a href="https://theme-next.js.org/docs/getting-started/">NexT:
+Getting Started</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>tutorial</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>More on Hexo</title>
+    <url>/2022/07/05/More-on-Hexo/</url>
+    <content><![CDATA[<p>This post explores more on how to use Hexo.</p>
+<h2 id="wrting">Wrting</h2>
+<h3 id="layout">layout</h3>
+<p>There are mainly three types of layouts: post, draft, and page. When
+using <code>hexo n</code>, the default layout is <code>post</code>. One
+can change it by setting the <code>default_laout</code> in
+_config.yml.</p>
+<h4 id="post">post</h4>
+<p>Post is just the Markdown files in <code>source/_posts</code> folder.
+You could either create a post by creating a new Markdown file or use
+the command <code>hexo n</code><em><code>post_name</code></em> to create
+a new post.</p>
+<h4 id="draft">draft</h4>
+<p>When creating a new post, you can use
+<code>hexo n draft</code><em><code>draft_name</code></em> to create a
+new draft, which will be stored in <code>source/_drafts</code>. By
+default, the draft will not be rendered on the server, but you can use
+<code>hexo s --draft</code> to render the draft. Once done with the
+draft, use <code>hexo publish</code><em><code>draft_name</code></em>
+(<code>hexo p</code> for short) to publish the draft (move draft from
+_draft to_posts will do the samve).</p>
+<h4 id="page">page</h4>
+<p>One can use the command
+<code>hexo n page</code><em><code>page_name</code></em> to create a new
+page. It will create a new folder with <em><code>page_name</code></em>
+under <code>source</code> folder. Pages will not be shown as a post on
+the server, and they need to be accessed directly by specifying the path
+in the URL.</p>
+<h4 id="scaffolds">scaffolds</h4>
+<p>The scaffolds folder controls the default layout of the new file. You
+can create more Markdown files with a different name and use
+<code>hexo n</code><em><code>scaffold_name</code></em> to create a new
+file with that type in the `source/_posts`` folder.</p>
+<h3 id="front-matter">front matter</h3>
+<p>Front matter looks like the following on the top of the Markdown
+file:</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: More on Hexo</span><br><span class="line">date: 2022-07-05 12:11:30</span><br><span class="line"><span class="section">tags: [Hexo, tutorial]</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+<p>It is written in either YAML or JSON.</p>
+<h4 id="tags">tags</h4>
+<p>you can have tags at the very top of the post using syntax
+<code>tags: [tag1, tag2, tag3, ...]</code></p>
+<h4 id="categories">categories</h4>
+<p>you can have categories at the very top of the post using the
+following syntax</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">categories:</span></span><br><span class="line">    <span class="bullet">-</span> [<span class="string">category1</span>, <span class="string">subcategory1</span>, <span class="string">subsubcategory1</span>, <span class="string">...</span>]</span><br><span class="line">    <span class="bullet">-</span> [<span class="string">category2</span>, <span class="string">...</span>]</span><br><span class="line"><span class="bullet">-</span> <span class="string">...</span></span><br></pre></td></tr></table></figure>
+<h3 id="tag-plugins">tag plugins</h3>
+<p>You can use tag plugins to quickly add specific content that will get
+rendered by Hexo. Most tag plugins have the format
+<code>&#123;% tag_name %&#125;</code>. You can find all tag plugins syntax <a
+href="https://hexo.io/docs/tag-plugins">here</a>. However, tag plugins
+would not be rendered using the Markdown editor since they are not
+Markdown syntax nor HTML.</p>
+<h2 id="asset">asset</h2>
+<p>asset folder store the static resources you want to access in the
+Markdown file. Note that all assets should be in a folder that has the
+same name as the post.</p>
+<h3 id="setup">setup</h3>
+<p>in _config.yml, change false to true in
+<code>post_asset_folder: false</code></p>
+<h3 id="images">images</h3>
+<p>One can use the tag plugins <code>&#123;% asset_img image.png Alt Text %&#125;</code> to add
+an image if <em>image.png</em> is in the folder with the same name as
+the post</p>
+<p>Install hexo-asset-link (npm i -s hexo-asset-link) to support
+Markdown image syntax (<code>![Alt Text](image.png)</code>). The
+image.png can either be inside a folder with the same name as the post
+(access via <em>post_name/image.png</em>) or in a folder under source
+(access via <em>/folder_name/image.png</em>)</p>
+<h2 id="theme">theme</h2>
+<p>By default, Hexo has the theme landscape inside the
+<code>themes</code> folder.</p>
+<h3 id="install-theme">install theme</h3>
+<p>You can find themes <a href="https://hexo.io/themes">here</a>.</p>
+<ol type="1">
+<li>read README to make sure if there are prerequisites for
+installation</li>
+<li>clone the git repository into the <code>themes</code> folder</li>
+<li>change <code>theme</code> in _config.yml to the name of the theme
+folder</li>
+</ol>
+<h3 id="create-your-own-theme">create your own theme</h3>
+<p>Check <a
+href="https://www.youtube.com/watch?v=5ROIU_9dYe4&amp;list=PLLAZ4kZ9dFpOMJR6D25ishrSedvsguVSm&amp;index=12">this
+tutorial</a> for more information.</p>
+<h2 id="plugins">plugins</h2>
+<p>You can find plugins <a href="https://hexo.io/plugins">here</a> and
+install them by <code>npm install_plugin_name_``*</code>--save`.</p>
+<h2 id="configuration">configuration</h2>
+<h3 id="site-settings-_config.yml">site settings (_config.yml)</h3>
+<p>You can set site title, author name, language and so on</p>
+<h3 id="important-settings">important settings</h3>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">default_layout:</span> <span class="string">post</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">&lt;https://oauth2:yourtoken@github.com/username/username.github.io.git&gt;</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a
+href="https://www.youtube.com/watch?v=Kt7u5kr_P5o&amp;list=PLLAZ4kZ9dFpOMJR6D25ishrSedvsguVSm">Hexo
+Youtube Tutorial</a></li>
+<li><a
+href="https://chrismroberts.com/2020/01/06/using-markdown-in-hexo-to-add-images/">Adding
+Images to Hexo Posts with Markdown</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>tutorial</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>My first post using hexo framework for blog</title>
+    <url>/2022/07/04/My-first-post-using-hexo-framework-for-blog/</url>
+    <content><![CDATA[<p>Hi, this is Jerry (Zijie) Wu! I decided to start writing blogs. And
+after some quick research, I found that hexo seems to fit my needs. It
+can be deployed on GitHub so I don't have to rent a server. I've also
+considered using LinkedIn as a blog platform, but seems like not many
+people are doing that and it doesn't look "geeky."</p>
+<p>I will mainly use the blog to write about things related to my major
+(Electrical and Computer Engineering) and hope to share my knowledge and
+experience with others (if anyone ever visits).</p>
+<h2 id="setup-hexo">Setup Hexo</h2>
+<p>In the following, I will briefly talk about how to set up Hexo and
+deploy it on GitHub and how to use it.</p>
+<h3 id="install">Install</h3>
+<ol type="1">
+<li><p>install node.js</p></li>
+<li><p>open terminal</p>
+<ol type="1">
+<li><code>npm install hexo-cli -g</code> to install hexo</li>
+<li><code>mkdir</code><em><code>directory</code></em> to create a new
+directory for a new Hexo project</li>
+<li><code>cd</code><em><code>directory</code></em> to enter the new
+directory</li>
+<li><code>hexo init</code> to initialize a new Hexo project</li>
+<li><code>hexo server</code> to start a server on a local host (hexo s
+for short)</li>
+<li><code>hexo new</code><em><code>post_name</code></em> to create a new
+post (hexo n for short)</li>
+<li><code>hexo clean</code> to clean the static files</li>
+<li><code>hexo generate</code> to generate new static files</li>
+<li><code>npm install hexo-deployer-git --save</code> to install the git
+deployer</li>
+</ol></li>
+<li><p>create a new repository on GitHub, the name must be
+<code>githubusername.github.io</code></p></li>
+<li><p>in the _config.yml file, and modify the <strong>deploy</strong>**
+section:</p>
+<p><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">https://oauth2:yourtoken@github.com/*****.github.io</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure></p></li>
+<li><p>run <code>hexo deploy</code> in terminal to deploy to GitHub
+(hexo d for short)</p></li>
+<li><p>now you can access your blog at
+<code>https://githubusername.github.io</code> (wait for a few minutes if
+it doesn't work)</p></li>
+</ol>
+<h3 id="usage">Usage</h3>
+<ul>
+<li><code>hexo n "title"</code>: create a new post</li>
+<li><code>hexo s</code>: start a server in a local host</li>
+<li><code>hexo c</code>: clean the static files</li>
+<li><code>hexo g</code>: generate the static files</li>
+<li><code>hexo d</code>: deploy to GitHub</li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a
+href="https://www.bilibili.com/video/BV1Yb411a7ty?spm_id_from=333.999.0.0&amp;vd_source=99a1bb3a7187eeea1a5ee8e957c968a7">Step-by-step
+Hexo installation guide (Chinese)</a></li>
+<li><a
+href="https://www.youtube.com/watch?v=Kt7u5kr_P5o&amp;list=PLLAZ4kZ9dFpOMJR6D25ishrSedvsguVSm">Hexo
+Youtube Tutorial</a></li>
+<li><a href="https://www.markdownguide.org/basic-syntax/">Markdown Basic
+Syntax</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>tutorial</tag>
+        <tag>framework</tag>
+      </tags>
+  </entry>
+</search>

@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.4.2">
+
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="/NexT_icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/NexT_icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/NexT_icon/favicon-16x16.png">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"jerrywuzijie.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.2","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":{"enable":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Setting up NexT theme for Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo theme: NexT">
+<meta property="og:url" content="https://jerrywuzijie.github.io/2022/07/07/Hexo-theme-next/index.html">
+<meta property="og:site_name" content="Jerry&#39;s Blog">
+<meta property="og:description" content="Setting up NexT theme for Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-07-07T16:41:08.000Z">
+<meta property="article:modified_time" content="2022-07-07T17:14:46.748Z">
+<meta property="article:author" content="Jerry (Zijie) Wu">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="tutorial">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://jerrywuzijie.github.io/2022/07/07/Hexo-theme-next/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://jerrywuzijie.github.io/2022/07/07/Hexo-theme-next/","path":"2022/07/07/Hexo-theme-next/","title":"Hexo theme: NexT"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Hexo theme: NexT | Jerry's Blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Q0X4257T1"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-0Q0X4257T1","only_pageview":false}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Jerry's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-all-posts"><a href="/archives/" rel="section"><i class="fa fa-file-lines fa-fw"></i>all posts</a></li><li class="menu-item menu-item-about-me"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>about me</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">3</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">0</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#install"><span class="nav-number">1.</span> <span class="nav-text">install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#upgrade"><span class="nav-number">2.</span> <span class="nav-text">upgrade</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#configuration"><span class="nav-number">3.</span> <span class="nav-text">configuration</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#in-_config.yml-under-the-root-folder"><span class="nav-number">3.1.</span> <span class="nav-text">In _config.yml under the
+root folder</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#in-_config.yml-under-next-folder"><span class="nav-number">3.2.</span> <span class="nav-text">In _config.yml under next
+folder</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#scheme-settings"><span class="nav-number">3.2.1.</span> <span class="nav-text">Scheme Settings</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#site-information-settings"><span class="nav-number">3.2.2.</span> <span class="nav-text">Site Information Settings</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#menu-settings"><span class="nav-number">3.2.3.</span> <span class="nav-text">Menu Settings</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#sidebar-settings"><span class="nav-number">3.2.4.</span> <span class="nav-text">Sidebar Settings</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#footer"><span class="nav-number">3.2.5.</span> <span class="nav-text">footer</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#post"><span class="nav-number">3.2.6.</span> <span class="nav-text">post</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#misc"><span class="nav-number">3.2.7.</span> <span class="nav-text">misc</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#font-setting-self-explanatory"><span class="nav-number">3.2.8.</span> <span class="nav-text">font setting
+(self-explanatory)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#search-engine-optimization-seo"><span class="nav-number">3.2.9.</span> <span class="nav-text">search engine optimization
+(SEO)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#third-party-services"><span class="nav-number">4.</span> <span class="nav-text">Third-party services</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#math-equations"><span class="nav-number">4.1.</span> <span class="nav-text">Math Equations</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#setting"><span class="nav-number">4.1.1.</span> <span class="nav-text">Setting</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#prerequisite"><span class="nav-number">4.1.2.</span> <span class="nav-text">prerequisite</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#examples"><span class="nav-number">4.1.3.</span> <span class="nav-text">Examples</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#comment-systems"><span class="nav-number">4.2.</span> <span class="nav-text">Comment Systems</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#disqus-directly-quoted-from-here"><span class="nav-number">4.2.1.</span> <span class="nav-text">Disqus (directly quoted from
+here)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#analytics"><span class="nav-number">5.</span> <span class="nav-text">Analytics</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#search-services"><span class="nav-number">6.</span> <span class="nav-text">Search Services</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#chat-services"><span class="nav-number">7.</span> <span class="nav-text">Chat Services</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#chatra"><span class="nav-number">7.1.</span> <span class="nav-text">Chatra</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#external-libraries"><span class="nav-number">8.</span> <span class="nav-text">External Libraries</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tag-plugins"><span class="nav-number">9.</span> <span class="nav-text">Tag Plugins</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#reference"><span class="nav-number">10.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Jerry (Zijie) Wu"
+      src="/NexT_icon/avatar.png">
+  <p class="site-author-name" itemprop="name">Jerry (Zijie) Wu</p>
+  <div class="site-description" itemprop="description">Hi, I am Jerry. This is a site for my blog.</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/JerryWuZiJie" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;JerryWuZiJie" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://stackoverflow.com/users/13720936/jerry-wu" title="StackOverflow → https:&#x2F;&#x2F;stackoverflow.com&#x2F;users&#x2F;13720936&#x2F;jerry-wu" rel="noopener" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i>StackOverflow</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.linkedin.com/in/jerry-zijie-wu/" title="LinkedIn → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;jerry-zijie-wu&#x2F;" rel="noopener" target="_blank"><i class="fab fa-linkedin fa-fw"></i>LinkedIn</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://jerrywuzijie.github.io/2022/07/07/Hexo-theme-next/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/NexT_icon/avatar.png">
+      <meta itemprop="name" content="Jerry (Zijie) Wu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jerry's Blog">
+      <meta itemprop="description" content="Hi, I am Jerry. This is a site for my blog.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Hexo theme: NexT | Jerry's Blog">
+      <meta itemprop="description" content="Setting up NexT theme for Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Hexo theme: NexT
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-07-07 12:41:08 / Modified: 13:14:46" itemprop="dateCreated datePublished" datetime="2022-07-07T12:41:08-04:00">2022-07-07</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2022/07/07/Hexo-theme-next/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2022/07/07/Hexo-theme-next/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+            <div class="post-description">Setting up NexT theme for Hexo</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="install">install</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+<h2 id="upgrade">upgrade</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin master  <span class="comment"># (inside the next folder)</span></span><br></pre></td></tr></table></figure>
+<h2 id="configuration">configuration</h2>
+<h3 id="in-_config.yml-under-the-root-folder">In _config.yml under the
+root folder</h3>
+<ul>
+<li>change theme to NexT: change
+<code>theme:</code><em><code>theme</code></em> in _config.yml to
+<code>theme: next</code></li>
+</ul>
+<h3 id="in-_config.yml-under-next-folder">In _config.yml under next
+folder</h3>
+<h4 id="scheme-settings">Scheme Settings</h4>
+<ul>
+<li>change NexT theme:</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Schemes</span></span><br><span class="line"><span class="comment"># scheme: Muse</span></span><br><span class="line"><span class="comment"># scheme: Mist</span></span><br><span class="line"><span class="comment"># scheme: Pisces</span></span><br><span class="line"><span class="attr">scheme:</span> <span class="string">Gemini</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>darkmode: <code>darkmode: true</code></li>
+</ul>
+<h4 id="site-information-settings">Site Information Settings</h4>
+<ul>
+<li><p>icon: put icon under source/<em>custom_folder</em></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">favicon:</span></span><br><span class="line">    <span class="attr">small:</span> <span class="string">/custom_folder/favicon-16x16.png</span></span><br><span class="line">    <span class="attr">medium:</span> <span class="string">/custom_folder/favicon-32x32.png</span></span><br><span class="line">    <span class="attr">apple_touch_icon:</span> <span class="string">/custom_folder/apple-touch-icon.png</span></span><br><span class="line">    <span class="comment"># safari_pinned_tab: /images/logo.svg</span></span><br><span class="line">    <span class="comment"># android_manifest: /manifest.json</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>one can use <a target="_blank" rel="noopener" href="https://realfavicongenerator.net/">this site</a>
+to generate icons</p>
+<h4 id="menu-settings">Menu Settings</h4>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">    <span class="comment"># Key: /link/ || icon</span></span><br><span class="line">    <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-home</span></span><br><span class="line">    <span class="attr">about:</span> <span class="string">/about/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-user</span></span><br><span class="line">    <span class="attr">tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-tags</span></span><br><span class="line">    <span class="attr">categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-th</span></span><br><span class="line">    <span class="attr">archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-archive</span></span><br></pre></td></tr></table></figure>
+<p>Except for home and archives, all custom pages under the menu section
+need to be created <a
+target="_blank" rel="noopener" href="https://theme-next.js.org/docs/theme-settings/custom-pages.html">manually</a></p>
+<ul>
+<li>Adding tags
+<ol type="1">
+<li><code>hexo n page tags</code></li>
+<li>add <code>type: tags</code> to front matter</li>
+<li>edit <em>custom-name</em>/index.md to change content</li>
+</ol></li>
+<li>Adding categories: similar to tags</li>
+<li>Adding Google Canlendar: check <a
+target="_blank" rel="noopener" href="https://theme-next.js.org/docs/theme-settings/custom-pages.html#Adding-Google-Calendar-Page">here</a></li>
+<li>Adding 404 page:
+<ol type="1">
+<li><code>hexo n page 404</code></li>
+<li>set <code>relative_link: false</code> in root/_config.yml</li>
+</ol></li>
+<li>Adding others
+<ol type="1">
+<li><code>hexo n page</code><em><code>custom-name</code></em></li>
+<li>edit front matter</li>
+<li>edit <em>custom-name</em>/index.md to change content (can also use
+index.html instead of index.md)</li>
+</ol></li>
+</ul>
+<p>icons are from <a target="_blank" rel="noopener" href="https://fontawesome.com/">Font
+Awesome</a></p>
+<p>You can display/hide icons and badges by setting the followings:</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu_settings:</span></span><br><span class="line">    <span class="attr">icons:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">badges:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h4 id="sidebar-settings">Sidebar Settings</h4>
+<ul>
+<li><p>avatar: <code>avatar: url: /NexT_icon/avatar.png</code></p></li>
+<li><p>social: name: link || icon</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">social:</span></span><br><span class="line">    <span class="attr">GitHub:</span> <span class="string">https://github.com/yourname</span> <span class="string">||</span> <span class="string">fab</span> <span class="string">fa-github</span></span><br><span class="line">    <span class="attr">E-Mail:</span> <span class="string">mailto:yourname@gmail.com</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-envelope</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="footer">footer</h4>
+<ul>
+<li>since <em>year</em>: display <em>year</em> to the current year</li>
+<li>icon:
+<ul>
+<li>name: link to <a target="_blank" rel="noopener" href="https://fontawesome.com/">Font
+Awesome</a></li>
+<li>animated</li>
+<li>color: in HEX code</li>
+</ul></li>
+<li>copyright: if none, will use the author's name</li>
+<li>powered: whether to show "Powered by Hexo &amp; NexT"</li>
+</ul>
+<h4 id="post">post</h4>
+<ul>
+<li><p>preamble text</p>
+<ul>
+<li>write <span id="more"></span> to break article manually</li>
+<li>enable <code>excerpt_description: true</code> and have a
+<code>description</code> field in front matter to display the
+excerpt</li>
+<li>without the previous two, the whole post will be considered as a
+preamble and displayed</li>
+</ul></li>
+<li><p><code>tag_icon: true</code>: use tag icon instead of #</p></li>
+<li><p>donate</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">reward_settings:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="attr">reward:</span></span><br><span class="line">    <span class="attr">wechatpay:</span> <span class="string">/NexT_icon/wechatpay.jpg</span></span><br><span class="line">    <span class="attr">alipay:</span> <span class="string">/NexT_icon/alipay.jpg</span></span><br><span class="line">    <span class="attr">paypal:</span> <span class="string">/NexT_icon/paypal.png</span></span><br></pre></td></tr></table></figure></li>
+<li><p>follow me (self-explanatory)</p></li>
+<li><p><code>post_edit</code>: enable editing source code (if one pushes
+source code to GitHub)</p></li>
+<li><p><code>post_navigation: left</code>: older post is on the
+left</p></li>
+</ul>
+<h4 id="misc">misc</h4>
+<ul>
+<li><code>preconnect: true</code>: Initiating an early connection</li>
+<li><code>mobile_layout_economy: true</code>: reduce margin on device
+with narrow width</li>
+<li><code>codeblock.copy_button.enable: true</code>: enable copy
+button</li>
+<li><code>back2top: enable: true</code>: enable back to top button</li>
+</ul>
+<h4 id="font-setting-self-explanatory">font setting
+(self-explanatory)</h4>
+<h4 id="search-engine-optimization-seo">search engine optimization
+(SEO)</h4>
+<ol type="1">
+<li>go to verification methods and choose HTML Tag</li>
+<li>get
+<code>&lt;meta name="verification" content="XXXXXXXXXXXXXXXXXXXXXXX"&gt;</code></li>
+<li>copy <code>XXXXXXXXXXXXXXXXXXXXXXX</code> to the verification
+field</li>
+</ol>
+<h2 id="third-party-services">Third-party services</h2>
+<h3 id="math-equations">Math Equations</h3>
+<h4 id="setting">Setting</h4>
+<ul>
+<li><p><code>every_page: false</code>: will not render page unless the
+front matter has <code>mathjax: true</code></p></li>
+<li><p><code>mathjax</code>: more powerful than the <code>katex</code>
+option but slower</p>
+<ul>
+<li><code>enable: true</code>: enable mathjax</li>
+<li><code>tags: ams</code>: automatic equaiton numbering if surround by
+<code>\begin&#123;xxx&#125; ... \end&#123;xxx&#125;</code> block</li>
+</ul></li>
+</ul>
+<h4 id="prerequisite">prerequisite</h4>
+<p>install <a target="_blank" rel="noopener" href="https://pandoc.org/installing.html">pandoc</a>
+install <code>hexo-renderer-pandoc</code>:</p>
+<p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># inside the hexo blog folder</span></span><br><span class="line">$ npm un hexo-renderer-marked</span><br><span class="line">$ npm i hexo-renderer-pandoc</span><br><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure></p>
+<h4 id="examples"><a
+target="_blank" rel="noopener" href="https://theme-next.js.org/docs/third-party-services/math-equations.html#Examples">Examples</a></h4>
+<p>Equation without ams: <span class="math display">\[ x = {-b \pm
+\sqrt{b^2-4ac} \over 2a} \]</span></p>
+<hr />
+<p>Equation with ams: <span class="math display">\[\begin{equation}
+x = {-b \pm \sqrt{b^2-4ac} \over 2a}
+\end{equation}\]</span></p>
+<hr />
+<p>Equaiton with tag <span class="math display">\[ x = {-b \pm
+\sqrt{b^2-4ac} \over 2a} \tag{custom tag}\]</span></p>
+<hr />
+<p>Equation with label (must have either ams or tag): <span
+class="math display">\[\begin{equation} \label{eq1}
+x = {-b \pm \sqrt{b^2-4ac} \over 2a}
+\end{equation}\]</span> and then use <code>$\eqref&#123;label_name&#125;$</code>
+to reference the equation <span
+class="math inline">\(\eqref{eq1}\)</span></p>
+<hr />
+<p>Multi-line equation with one ams: <span
+class="math display">\[\begin{equation} \label{eq2}
+\begin{aligned}
+x &amp;= +{-b \pm \sqrt{b^2-4ac} \over 2a} \\
+  &amp;= -{-b \pm \sqrt{b^2-4ac} \over 2a}
+\end{aligned}
+\end{equation}\]</span></p>
+<hr />
+<p>Multi-line equation with multiple ams: <span
+class="math display">\[\begin{align}
+x &amp;= +{-b \pm \sqrt{b^2-4ac} \over 2a} \\
+  &amp;= -{-b \pm \sqrt{b^2-4ac} \over 2a}
+\end{align}\]</span></p>
+<hr />
+<p>Multi-line equation with multiple ams and certain line without
+number: <span class="math display">\[\begin{align}
+x &amp;= +{-b \pm \sqrt{b^2-4ac} \over 2a} \nonumber \\
+  &amp;= -{-b \pm \sqrt{b^2-4ac} \over 2a}
+\end{align}\]</span></p>
+<h3 id="comment-systems">Comment Systems</h3>
+<ul>
+<li><code>lazyload: true</code>: don't load the comment system until
+needed</li>
+<li>disable comments on certain posts: in the front matter, include
+<code>comments: false</code></li>
+</ul>
+<h4 id="disqus-directly-quoted-from-here">Disqus (directly quoted from
+<a
+target="_blank" rel="noopener" href="https://theme-next.js.org/docs/third-party-services/comments.html#Disqus">here</a>)</h4>
+<p>Disqus is a global comment system that improves discussion on
+websites and connects conversations across the web.</p>
+<ol type="1">
+<li><p>Create an account and log into <a
+target="_blank" rel="noopener" href="https://disqus.com/">Disqus</a>. Once logged in, click the
+<code>GET STARTED</code> button on the homepage, then select
+<code>I want to install Disqus on my site</code> option and you will see
+the <code>Create a new site</code> interface.</p></li>
+<li><p>Enter your <code>Website Name</code>, which will serve as your
+Disqus shortname, and select a Category from the drop-down menu. Then
+click <code>Create Site</code> button.</p></li>
+<li><p>Choose
+<code>I don't see my platform listed, install manually with Universal Code</code>,
+configure Disqus for your site, and click <code>Complete Setup</code>
+button.</p></li>
+<li><p>Set the value <code>enable</code> to <code>true</code>, add the
+obtained Disqus shortname (<code>shortname</code>), and edit other
+configurations in <code>disqus</code> section in the <mark class="label primary">NexT config file</mark> as
+following:</p>
+<p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">disqus:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">shortname:</span> <span class="string">your-short-disqus-name</span></span><br><span class="line">  <span class="attr">count:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></p></li>
+</ol>
+<h2 id="analytics"><a
+target="_blank" rel="noopener" href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics.html#Google-Analytics">Analytics</a></h2>
+<ul>
+<li><p>make sure you config the <code>url</code> in the hexo _config.yml
+file</p></li>
+<li><p>Google Analytics:</p>
+<ul>
+<li>create an account</li>
+<li>edit tracking_id field, fill with <code>MEASUREMENT ID</code></li>
+<li>others are similar</li>
+</ul></li>
+</ul>
+<h2 id="search-services">Search Services</h2>
+<ol type="1">
+<li><p><code>$ npm install hexo-generator-searchdb</code></p></li>
+<li><p>edit hexo _config.yml file and add the followings</p>
+<p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br></pre></td></tr></table></figure></p></li>
+<li><p>edit next _config.yml file</p>
+<ul>
+<li><code>local_search.enable: true</code>: enable local search</li>
+<li><code>local_search.top_n_per_article: -1</code>: show all results
+per article</li>
+</ul></li>
+</ol>
+<h2 id="chat-services">Chat Services</h2>
+<h3 id="chatra">Chatra</h3>
+<ol type="1">
+<li>Visit <a target="_blank" rel="noopener" href="https://app.chatra.io/">Chatra</a> and create an
+account</li>
+<li>edit <code>chatra.enable: true</code> and fill in your
+<code>chatra.id</code> in Chatra -&gt; Settings -&gt; Preferences -&gt;
+Public key</li>
+</ol>
+<h2 id="external-libraries">External Libraries</h2>
+<ul>
+<li>Pjax delivers a fast browsing experience</li>
+<li>Fancybox/Medium Zoom allows image zoom in, while Fancybox also
+supports videos</li>
+<li>lazyload will not load the image until needed. Run
+<code>hexo clean</code> once change this setting</li>
+<li>Quicklink enables preloading and speeds up subsequent
+page-loads</li>
+<li>motion allows animation, disable it to run faster. Check all effects
+<a target="_blank" rel="noopener" href="https://theme-next.js.org/animate/">here</a></li>
+</ul>
+<h2 id="tag-plugins">Tag Plugins</h2>
+<p>NexT has its own <a
+target="_blank" rel="noopener" href="https://theme-next.js.org/docs/tag-plugins/">tag plugins</a>
+beside Hexo</p>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a
+target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=Kt7u5kr_P5o&amp;list=PLLAZ4kZ9dFpOMJR6D25ishrSedvsguVSm">Hexo
+Youtube Tutorial</a></li>
+<li><a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/getting-started/">NexT:
+Getting Started</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div></div>
+  <button>
+    Donate
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/NexT_icon/wechatpay.jpg" alt="Jerry (Zijie) Wu WeChat Pay">
+        <span>WeChat Pay</span>
+      </div>
+      <div>
+        <img src="/NexT_icon/alipay.jpg" alt="Jerry (Zijie) Wu Alipay">
+        <span>Alipay</span>
+      </div>
+      <div>
+        <img src="/NexT_icon/paypal.png" alt="Jerry (Zijie) Wu PayPal">
+        <span>PayPal</span>
+      </div>
+      <div>
+        <img src="/NexT_icon/venmo.png" alt="Jerry (Zijie) Wu venmo">
+        <span>venmo</span>
+      </div>
+
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
+              <a href="/tags/tutorial/" rel="tag"><i class="fa fa-tag"></i> tutorial</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/07/05/More-on-Hexo/" rel="prev" title="More on Hexo">
+                  <i class="fa fa-chevron-left"></i> More on Hexo
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-gears"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jerry (Zijie) Wu</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+<script class="next-config" data-name="chatra" type="application/json">{"enable":true,"async":true,"id":"MhrkusNKdXv7SMvDv"}</script>
+<script src="/js/third-party/chat/chatra.js"></script>
+<script async src="https://call.chatra.io/chatra.js"></script>
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"ams","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.2.0/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":false,"archive":false,"delay":true,"timeout":3000,"priority":true,"url":"https://jerrywuzijie.github.io/2022/07/07/Hexo-theme-next/"}</script>
+  <script src="/js/third-party/quicklink.js"></script>
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"jerry-wu-blog","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/js/third-party/comments/disqus.js"></script>
+
+</body>
+</html>

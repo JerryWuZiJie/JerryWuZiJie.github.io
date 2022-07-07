@@ -456,4 +456,27 @@ Syntax</a></li>
         <tag>framework</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Issue when changing the hexo post name</title>
+    <url>/2022/07/07/Issue-when-changing-the-hexo-post-name/</url>
+    <content><![CDATA[<p>Today I found that even though I was able to open a post name
+<code>My first post using hexo framework for blog</code>, it couldn't be
+open on the remote server.</p>
+<p>After digging into the problem, I found the issue is that the
+original post name is
+<code>my first post using hexo framework for blog</code>, where
+<strong>M</strong> is lowercase before.</p>
+<p>So the issue is that git is by default case insensitive, so the
+folder in <code>.deploy_git</code> is always the lowercase one, and the
+website can't open requests for the uppercase one. Even if I change the
+name to uppercase, git still thinks they are the same. So I have to
+manually untrack and track again (or by git mv to rename).</p>
+<p>In the future, it's better to just change the <code>title:</code> in
+the front matter and leave the post Markdown filename unchanged</p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>issue</tag>
+      </tags>
+  </entry>
 </search>

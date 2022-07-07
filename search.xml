@@ -274,77 +274,6 @@ Getting Started</a></li>
       </tags>
   </entry>
   <entry>
-    <title>My first post using hexo framework for blog</title>
-    <url>/2022/07/04/My-first-post-using-hexo-framework-for-blog/</url>
-    <content><![CDATA[<p>Hi, this is Jerry (Zijie) Wu! I decided to start writing blogs. And
-after some quick research, I found that hexo seems to fit my needs. It
-can be deployed on GitHub so I don't have to rent a server. I've also
-considered using LinkedIn as a blog platform, but seems like not many
-people are doing that and it doesn't look "geeky."</p>
-<p>I will mainly use the blog to write about things related to my major
-(Electrical and Computer Engineering) and hope to share my knowledge and
-experience with others (if anyone ever visits).</p>
-<h2 id="setup-hexo">Setup Hexo</h2>
-<p>In the following, I will briefly talk about how to set up Hexo and
-deploy it on GitHub and how to use it.</p>
-<h3 id="install">Install</h3>
-<ol type="1">
-<li><p>install node.js</p></li>
-<li><p>open terminal</p>
-<ol type="1">
-<li><code>npm install hexo-cli -g</code> to install hexo</li>
-<li><code>mkdir</code><em><code>directory</code></em> to create a new
-directory for a new Hexo project</li>
-<li><code>cd</code><em><code>directory</code></em> to enter the new
-directory</li>
-<li><code>hexo init</code> to initialize a new Hexo project</li>
-<li><code>hexo server</code> to start a server on a local host (hexo s
-for short)</li>
-<li><code>hexo new</code><em><code>post_name</code></em> to create a new
-post (hexo n for short)</li>
-<li><code>hexo clean</code> to clean the static files</li>
-<li><code>hexo generate</code> to generate new static files</li>
-<li><code>npm install hexo-deployer-git --save</code> to install the git
-deployer</li>
-</ol></li>
-<li><p>create a new repository on GitHub, the name must be
-<code>githubusername.github.io</code></p></li>
-<li><p>in the _config.yml file, and modify the <strong>deploy</strong>**
-section:</p>
-<p><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">https://oauth2:yourtoken@github.com/*****.github.io</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure></p></li>
-<li><p>run <code>hexo deploy</code> in terminal to deploy to GitHub
-(hexo d for short)</p></li>
-<li><p>now you can access your blog at
-<code>https://githubusername.github.io</code> (wait for a few minutes if
-it doesn't work)</p></li>
-</ol>
-<h3 id="usage">Usage</h3>
-<ul>
-<li><code>hexo n "title"</code>: create a new post</li>
-<li><code>hexo s</code>: start a server in a local host</li>
-<li><code>hexo c</code>: clean the static files</li>
-<li><code>hexo g</code>: generate the static files</li>
-<li><code>hexo d</code>: deploy to GitHub</li>
-</ul>
-<h2 id="reference">Reference</h2>
-<ul>
-<li><a
-href="https://www.bilibili.com/video/BV1Yb411a7ty?spm_id_from=333.999.0.0&amp;vd_source=99a1bb3a7187eeea1a5ee8e957c968a7">Step-by-step
-Hexo installation guide (Chinese)</a></li>
-<li><a
-href="https://www.youtube.com/watch?v=Kt7u5kr_P5o&amp;list=PLLAZ4kZ9dFpOMJR6D25ishrSedvsguVSm">Hexo
-Youtube Tutorial</a></li>
-<li><a href="https://www.markdownguide.org/basic-syntax/">Markdown Basic
-Syntax</a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>tutorial</tag>
-        <tag>framework</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>More on Hexo</title>
     <url>/2022/07/05/More-on-Hexo/</url>
     <content><![CDATA[<p>This post explores more on how to use Hexo.</p>
@@ -452,6 +381,79 @@ Images to Hexo Posts with Markdown</a></li>
       <tags>
         <tag>Hexo</tag>
         <tag>tutorial</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>My first post using hexo framework for blog</title>
+    <url>/2022/07/04/My-first-post-using-hexo-framework-for-blog/</url>
+    <content><![CDATA[<p>Hi, this is Jerry (Zijie) Wu! I decided to start writing blogs. And
+after some quick research, I found that hexo seems to fit my needs. It
+can be deployed on GitHub so I don't have to rent a server. I've also
+considered using LinkedIn as a blog platform, but seems like not many
+people are doing that and it doesn't look "geeky."</p>
+<p>I will mainly use the blog to write about things related to my major
+(Electrical and Computer Engineering) and hope to share my knowledge and
+experience with others (if anyone ever visits).</p>
+<h2 id="setup-hexo">Setup Hexo</h2>
+<p>In the following, I will briefly talk about how to set up Hexo and
+deploy it on GitHub and how to use it.</p>
+<h3 id="install">Install</h3>
+<ol type="1">
+<li><p>install node.js</p></li>
+<li><p>open terminal</p>
+<ol type="1">
+<li><code>npm install hexo-cli -g</code> to install hexo</li>
+<li><code>mkdir</code><em><code>directory</code></em> to create a new
+directory for a new Hexo project</li>
+<li><code>cd</code><em><code>directory</code></em> to enter the new
+directory</li>
+<li><code>hexo init</code> to initialize a new Hexo project</li>
+<li><code>hexo server</code> to start a server on a local host (hexo s
+for short)</li>
+<li><code>hexo new</code><em><code>post_name</code></em> to create a new
+post (hexo n for short)</li>
+<li><code>hexo clean</code> to clean the static files</li>
+<li><code>hexo generate</code> to generate new static files</li>
+<li><code>npm install hexo-deployer-git --save</code> to install the git
+deployer</li>
+</ol></li>
+<li><p>create a new repository on GitHub, the name must be
+<code>githubusername.github.io</code></p></li>
+<li><p>in the _config.yml file, and modify the <strong>deploy</strong>**
+section:</p>
+<p><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">https://oauth2:yourtoken@github.com/*****.github.io</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure></p>
+<p>remember <strong>not</strong> to include <em>yourtoken</em> in a
+public repository.</p></li>
+<li><p>run <code>hexo deploy</code> in terminal to deploy to GitHub
+(hexo d for short)</p></li>
+<li><p>now you can access your blog at
+<code>https://githubusername.github.io</code> (wait for a few minutes if
+it doesn't work)</p></li>
+</ol>
+<h3 id="usage">Usage</h3>
+<ul>
+<li><code>hexo n "title"</code>: create a new post</li>
+<li><code>hexo s</code>: start a server in a local host</li>
+<li><code>hexo c</code>: clean the static files</li>
+<li><code>hexo g</code>: generate the static files</li>
+<li><code>hexo d</code>: deploy to GitHub</li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a
+href="https://www.bilibili.com/video/BV1Yb411a7ty?spm_id_from=333.999.0.0&amp;vd_source=99a1bb3a7187eeea1a5ee8e957c968a7">Step-by-step
+Hexo installation guide (Chinese)</a></li>
+<li><a
+href="https://www.youtube.com/watch?v=Kt7u5kr_P5o&amp;list=PLLAZ4kZ9dFpOMJR6D25ishrSedvsguVSm">Hexo
+Youtube Tutorial</a></li>
+<li><a href="https://www.markdownguide.org/basic-syntax/">Markdown Basic
+Syntax</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>tutorial</tag>
+        <tag>framework</tag>
       </tags>
   </entry>
 </search>

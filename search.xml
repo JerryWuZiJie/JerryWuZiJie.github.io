@@ -268,6 +268,10 @@ Youtube Tutorial</a></li>
 Getting Started</a></li>
 </ul>
 ]]></content>
+      <categories>
+        <category>setup</category>
+        <category>configuration</category>
+      </categories>
       <tags>
         <tag>Hexo</tag>
         <tag>tutorial</tag>
@@ -378,6 +382,9 @@ href="https://chrismroberts.com/2020/01/06/using-markdown-in-hexo-to-add-images/
 Images to Hexo Posts with Markdown</a></li>
 </ul>
 ]]></content>
+      <categories>
+        <category>configuration</category>
+      </categories>
       <tags>
         <tag>Hexo</tag>
         <tag>tutorial</tag>
@@ -450,6 +457,9 @@ Youtube Tutorial</a></li>
 Syntax</a></li>
 </ul>
 ]]></content>
+      <categories>
+        <category>setup</category>
+      </categories>
       <tags>
         <tag>Hexo</tag>
         <tag>tutorial</tag>
@@ -474,6 +484,9 @@ manually untrack and track again (or by git mv to rename).</p>
 <p>In the future, it's better to just change the <code>title:</code> in
 the front matter and leave the post Markdown filename unchanged</p>
 ]]></content>
+      <categories>
+        <category>issue</category>
+      </categories>
       <tags>
         <tag>Hexo</tag>
         <tag>issue</tag>

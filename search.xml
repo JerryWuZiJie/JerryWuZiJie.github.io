@@ -631,4 +631,31 @@ version would be enough.</li>
         <tag>IDE</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Why can&#39;t variable names start with numbers</title>
+    <url>/2022/07/08/Why-can-t-variable-names-start-with-numbers/</url>
+    <content><![CDATA[<p>Almost all programming languages I have seen so far don't allow me to
+start variable names with numbers. So I search it up, and found on
+StackOverflow that the reason is quite simple:</p>
+<ol type="1">
+<li><p>string of digits would be a valid identifier</p>
+<p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="number">1</span> = <span class="number">2</span>;</span><br></pre></td></tr></table></figure></p></li>
+<li><p>if you allow the format of digits + alpha, then the following
+would still cause the problem:</p>
+<p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="number">1f</span> = <span class="number">2</span>;</span><br><span class="line"><span class="type">float</span> a = <span class="number">1f</span>;  <span class="comment">// a is 1.0 or 2.0?</span></span><br></pre></td></tr></table></figure></p></li>
+</ol>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a
+href="https://stackoverflow.com/a/342192/13720936">StackOverflow</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>question</category>
+      </categories>
+      <tags>
+        <tag>variable</tag>
+        <tag>naming convention</tag>
+      </tags>
+  </entry>
 </search>

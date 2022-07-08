@@ -271,6 +271,7 @@ Getting Started</a></li>
       <categories>
         <category>setup</category>
         <category>configuration</category>
+        <category>guide</category>
       </categories>
       <tags>
         <tag>Hexo</tag>
@@ -384,6 +385,7 @@ Images to Hexo Posts with Markdown</a></li>
 ]]></content>
       <categories>
         <category>configuration</category>
+        <category>guide</category>
       </categories>
       <tags>
         <tag>Hexo</tag>
@@ -459,6 +461,7 @@ Syntax</a></li>
 ]]></content>
       <categories>
         <category>setup</category>
+        <category>guide</category>
       </categories>
       <tags>
         <tag>Hexo</tag>
@@ -490,6 +493,71 @@ the front matter and leave the post Markdown filename unchanged</p>
       <tags>
         <tag>Hexo</tag>
         <tag>issue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java Setup</title>
+    <url>/2022/07/07/Java-Setup/</url>
+    <content><![CDATA[<p>It's been a while since I set up Java last time (around 2015). After
+that, I use Java intermittently, but only in ready-to-go environments
+like [LeetCode] and <a href="https://replit.com/">replit</a>. Now I
+decide to learn Java again and from the very beginning. This post will
+include how to set up the Java environment so it's ready to code.</p>
+<blockquote>
+<p>OS: Windows 10</p>
+</blockquote>
+<h2 id="install-jdk8">Install JDK8</h2>
+<p>The reason that I don't use the latest JDK (Java Development Kit) is
+that JDK8 is the most popular among enterprises.</p>
+<p>Relationship between JVM, JRE, JDK: JDK includes JRE include JVM</p>
+<ol type="1">
+<li>Download <a
+href="https://www.oracle.com/java/technologies/downloads/">JDK8</a></li>
+<li>configure Environment Variables*
+<ol type="1">
+<li><p>create a new environment variable <code>JAVA_HOME</code>, the
+variable value is the directory of the JDK (something like
+<code>path/to/java/jdk1.8</code>)</p></li>
+<li><p>add the following to the <code>Path</code> variable:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">%JAVA_HOME%\bin</span><br><span class="line">%JAVA_HOME%\jre\bin</span><br></pre></td></tr></table></figure></li>
+</ol></li>
+<li>open command prompt and type <code>java -version</code> to check if
+the JDK is installed correctly</li>
+</ol>
+<p>* Difference between User Variables and System Variables:</p>
+<blockquote>
+<p>System variables are shared for all users, but user variables are
+only for your account/profile <sup><a
+href="https://stackoverflow.com/a/4477681/13720936">[1]</a></sup></p>
+<p>Environment variables are 'evaluated' (ie. they are attributed) in
+the following order: System variables -&gt; Variables defined in
+autoexec.bat -&gt; User variables <sup><a
+href="https://stackoverflow.com/a/16305526/13720936">[2]</a></sup></p>
+</blockquote>
+<h2 id="uninstall-jdk8">Uninstall JDK8</h2>
+<p>In <code>Environment Variables</code>, find <code>Path</code>, inside
+you will find Java's directory. Go to that directory and just delete it.
+Then remove it from the <code>Path</code>, and delete Environment
+Variable <code>JAVA_HOME</code>.</p>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a
+href="https://www.bilibili.com/video/BV12J41137hu?p=17&amp;spm_id_from=pageDriver&amp;vd_source=99a1bb3a7187eeea1a5ee8e957c968a7">狂神说Java</a></li>
+</ul>
+<ol type="1">
+<li><a
+href="https://stackoverflow.com/a/4477681/13720936">StackOverflow</a></li>
+<li><a
+href="https://stackoverflow.com/a/16305526/13720936">StackOverflow</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>setup</category>
+        <category>guide</category>
+      </categories>
+      <tags>
+        <tag>tutorial</tag>
+        <tag>Java</tag>
       </tags>
   </entry>
 </search>

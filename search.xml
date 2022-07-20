@@ -1,8 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Install IDEA</title>
+    <url>/2022/07/09/Install-IDEA/</url>
+    <content><![CDATA[<p><a href="https://www.jetbrains.com/idea/">Intellij IDEA</a> is one of
+the most popular Java IDE. This post is going to talk about how to
+install IDEA and set it up.</p>
+<ol type="1">
+<li>go to the <a
+href="https://www.jetbrains.com/idea/download/#section=windows">official
+website</a> and download the one that matches your system. Note that for
+students, you can down the Ultimate version for free, yet the community
+version would be enough.</li>
+<li>install it as prompted.</li>
+<li>create a new project.</li>
+<li>right-click on <code>src</code> folder, and select <code>New</code>
+-&gt; <code>Java Class</code>.</li>
+<li>type psvm, and IDEA will create the main function for you</li>
+<li>type sout, and IDEA will create System.out.println for you</li>
+</ol>
+]]></content>
+      <categories>
+        <category>programming</category>
+        <category>java</category>
+        <category>setup</category>
+        <category>guide</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>IDE</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo theme: NexT</title>
-    <url>/2022/07/07/Hexo-theme-next/</url>
+    <url>/2022/07/08/Hexo-theme-next/</url>
     <content><![CDATA[<h2 id="install">install</h2>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
 <h2 id="upgrade">upgrade</h2>
@@ -279,39 +310,46 @@ Getting Started</a></li>
       </tags>
   </entry>
   <entry>
-    <title>Install IDEA</title>
-    <url>/2022/07/08/Install-IDEA/</url>
-    <content><![CDATA[<p><a href="https://www.jetbrains.com/idea/">Intellij IDEA</a> is one of
-the most popular Java IDE. This post is going to talk about how to
-install IDEA and set it up.</p>
+    <title>Java Hello World!</title>
+    <url>/2022/07/09/Java-Hello-World/</url>
+    <content><![CDATA[<p>This post demonstrates how to write a simple Java program.</p>
 <ol type="1">
-<li>go to the <a
-href="https://www.jetbrains.com/idea/download/#section=windows">official
-website</a> and download the one that matches your system. Note that for
-students, you can down the Ultimate version for free, yet the community
-version would be enough.</li>
-<li>install it as prompted.</li>
-<li>create a new project.</li>
-<li>right-click on <code>src</code> folder, and select <code>New</code>
--&gt; <code>Java Class</code>.</li>
-<li>type psvm, and IDEA will create the main function for you</li>
-<li>type sout, and IDEA will create System.out.println for you</li>
+<li><p>create file end with <code>.java</code></p></li>
+<li><p>writes the following code</p>
+<p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Hello</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p></li>
+<li><p>run <code>javac filename.java</code> to compile. If successful, a
+new file name <code>filename.class</code> will be created.</p></li>
+<li><p>finally, run <code>java filename</code> to run the
+program.</p></li>
 </ol>
+<p>Some elaboration:</p>
+<ul>
+<li><code>public</code> is an access modifier indicating that the class
+and method can be accessed by others. <code>static</code> means it's a
+static method that is accessible without creating an instance of the
+class. <code>void</code> means the method doesn't return anything.
+<code>main</code> is the entry point for any Java program. When the
+program start, it looks for the main method and executes it.
+<code>System.out.println()</code> is a built-in method call.
+<code>Hello World!</code> is a string literal.</li>
+<li>Java can be considered as both interpreted and compiled language. It
+compiles the source code into <code>.class</code> files when you run
+<code>javac</code>, and JVM interprets the compiled code when you run
+<code>java</code>.</li>
+</ul>
 ]]></content>
       <categories>
         <category>programming</category>
-        <category>setup</category>
         <category>java</category>
-        <category>guide</category>
       </categories>
       <tags>
         <tag>Java</tag>
-        <tag>IDE</tag>
+        <tag>demo</tag>
       </tags>
   </entry>
   <entry>
     <title>Issue when changing the hexo post name</title>
-    <url>/2022/07/07/Issue-when-changing-the-hexo-post-name/</url>
+    <url>/2022/07/08/Issue-when-changing-the-hexo-post-name/</url>
     <content><![CDATA[<p>Today I found that even though I was able to open a post name
 <code>My first post using hexo framework for blog</code>, it couldn't be
 open on the remote server.</p>
@@ -337,7 +375,7 @@ the front matter and leave the post Markdown filename unchanged</p>
   </entry>
   <entry>
     <title>Java Setup</title>
-    <url>/2022/07/07/Java-Setup/</url>
+    <url>/2022/07/08/Java-Setup/</url>
     <content><![CDATA[<p>It's been a while since I set up Java last time (around 2015). After
 that, I use Java intermittently, but only in ready-to-go environments
 like [LeetCode] and <a href="https://replit.com/">replit</a>. Now I
@@ -393,56 +431,122 @@ href="https://stackoverflow.com/a/16305526/13720936">StackOverflow</a></li>
 ]]></content>
       <categories>
         <category>programming</category>
-        <category>setup</category>
         <category>java</category>
+        <category>setup</category>
         <category>guide</category>
       </categories>
       <tags>
-        <tag>tutorial</tag>
         <tag>Java</tag>
+        <tag>tutorial</tag>
       </tags>
   </entry>
   <entry>
-    <title>Java Hello World!</title>
-    <url>/2022/07/08/Java-Hello-World/</url>
-    <content><![CDATA[<p>This post demonstrates how to write a simple Java program.</p>
+    <title>My first post using hexo framework for blog</title>
+    <url>/2022/07/05/My-first-post-using-hexo-framework-for-blog/</url>
+    <content><![CDATA[<p>Hi, this is Jerry (Zijie) Wu! I decided to start writing blogs. And
+after some quick research, I found that hexo seems to fit my needs. It
+can be deployed on GitHub so I don't have to rent a server. I've also
+considered using LinkedIn as a blog platform, but seems like not many
+people are doing that and it doesn't look "geeky."</p>
+<p>I will mainly use the blog to write about things related to my major
+(Electrical and Computer Engineering) and hope to share my knowledge and
+experience with others (if anyone ever visits).</p>
+<h2 id="setup-hexo">Setup Hexo</h2>
+<p>In the following, I will briefly talk about how to set up Hexo and
+deploy it on GitHub and how to use it.</p>
+<h3 id="install">Install</h3>
 <ol type="1">
-<li><p>create file end with <code>.java</code></p></li>
-<li><p>writes the following code</p>
-<p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Hello</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p></li>
-<li><p>run <code>javac filename.java</code> to compile. If successful, a
-new file name <code>filename.class</code> will be created.</p></li>
-<li><p>finally, run <code>java filename</code> to run the
-program.</p></li>
+<li><p>install node.js</p></li>
+<li><p>open terminal</p>
+<ol type="1">
+<li><code>npm install hexo-cli -g</code> to install hexo</li>
+<li><code>mkdir</code><em><code>directory</code></em> to create a new
+directory for a new Hexo project</li>
+<li><code>cd</code><em><code>directory</code></em> to enter the new
+directory</li>
+<li><code>hexo init</code> to initialize a new Hexo project</li>
+<li><code>hexo server</code> to start a server on a local host (hexo s
+for short)</li>
+<li><code>hexo new</code><em><code>post_name</code></em> to create a new
+post (hexo n for short)</li>
+<li><code>hexo clean</code> to clean the static files</li>
+<li><code>hexo generate</code> to generate new static files</li>
+<li><code>npm install hexo-deployer-git --save</code> to install the git
+deployer</li>
+</ol></li>
+<li><p>create a new repository on GitHub, the name must be
+<code>githubusername.github.io</code></p></li>
+<li><p>in the _config.yml file, and modify the <strong>deploy</strong>**
+section:</p>
+<p><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">https://oauth2:yourtoken@github.com/*****.github.io</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure></p>
+<p>remember <strong>not</strong> to include <em>yourtoken</em> in a
+public repository.</p></li>
+<li><p>run <code>hexo deploy</code> in terminal to deploy to GitHub
+(hexo d for short)</p></li>
+<li><p>now you can access your blog at
+<code>https://githubusername.github.io</code> (wait for a few minutes if
+it doesn't work)</p></li>
 </ol>
-<p>Some elaboration:</p>
+<h3 id="usage">Usage</h3>
 <ul>
-<li><code>public</code> is an access modifier indicating that the class
-and method can be accessed by others. <code>static</code> means it's a
-static method that is accessible without creating an instance of the
-class. <code>void</code> means the method doesn't return anything.
-<code>main</code> is the entry point for any Java program. When the
-program start, it looks for the main method and executes it.
-<code>System.out.println()</code> is a built-in method call.
-<code>Hello World!</code> is a string literal.</li>
-<li>Java can be considered as both interpreted and compiled language. It
-compiles the source code into <code>.class</code> files when you run
-<code>javac</code>, and JVM interprets the compiled code when you run
-<code>java</code>.</li>
+<li><code>hexo n "title"</code>: create a new post</li>
+<li><code>hexo s</code>: start a server in a local host</li>
+<li><code>hexo c</code>: clean the static files</li>
+<li><code>hexo g</code>: generate the static files</li>
+<li><code>hexo d</code>: deploy to GitHub</li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a
+href="https://www.bilibili.com/video/BV1Yb411a7ty?spm_id_from=333.999.0.0&amp;vd_source=99a1bb3a7187eeea1a5ee8e957c968a7">Step-by-step
+Hexo installation guide (Chinese)</a></li>
+<li><a
+href="https://www.youtube.com/watch?v=Kt7u5kr_P5o&amp;list=PLLAZ4kZ9dFpOMJR6D25ishrSedvsguVSm">Hexo
+Youtube Tutorial</a></li>
+<li><a href="https://www.markdownguide.org/basic-syntax/">Markdown Basic
+Syntax</a></li>
 </ul>
 ]]></content>
       <categories>
-        <category>programming</category>
-        <category>java</category>
+        <category>setup</category>
+        <category>guide</category>
       </categories>
       <tags>
-        <tag>Java</tag>
-        <tag>demo</tag>
+        <tag>Hexo</tag>
+        <tag>tutorial</tag>
+        <tag>framework</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Why can&#39;t variable names start with numbers</title>
+    <url>/2022/07/09/Why-can-t-variable-names-start-with-numbers/</url>
+    <content><![CDATA[<p>Almost all programming languages I have seen so far don't allow me to
+start variable names with numbers. So I search it up, and found on
+StackOverflow that the reason is quite simple:</p>
+<ol type="1">
+<li><p>string of digits would be a valid identifier</p>
+<p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="number">1</span> = <span class="number">2</span>;</span><br></pre></td></tr></table></figure></p></li>
+<li><p>if you allow the format of digits + alpha, then the following
+would still cause the problem:</p>
+<p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="number">1f</span> = <span class="number">2</span>;</span><br><span class="line"><span class="type">float</span> a = <span class="number">1f</span>;  <span class="comment">// a is 1.0 or 2.0?</span></span><br></pre></td></tr></table></figure></p></li>
+</ol>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a
+href="https://stackoverflow.com/a/342192/13720936">StackOverflow</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>question</category>
+      </categories>
+      <tags>
+        <tag>variable</tag>
+        <tag>naming convention</tag>
       </tags>
   </entry>
   <entry>
     <title>More on Hexo</title>
-    <url>/2022/07/05/More-on-Hexo/</url>
+    <url>/2022/07/06/More-on-Hexo/</url>
     <content><![CDATA[<p>This post explores more on how to use Hexo.</p>
 <h2 id="wrting">Wrting</h2>
 <h3 id="layout">layout</h3>
@@ -555,107 +659,43 @@ Images to Hexo Posts with Markdown</a></li>
       </tags>
   </entry>
   <entry>
-    <title>My first post using hexo framework for blog</title>
-    <url>/2022/07/04/My-first-post-using-hexo-framework-for-blog/</url>
-    <content><![CDATA[<p>Hi, this is Jerry (Zijie) Wu! I decided to start writing blogs. And
-after some quick research, I found that hexo seems to fit my needs. It
-can be deployed on GitHub so I don't have to rent a server. I've also
-considered using LinkedIn as a blog platform, but seems like not many
-people are doing that and it doesn't look "geeky."</p>
-<p>I will mainly use the blog to write about things related to my major
-(Electrical and Computer Engineering) and hope to share my knowledge and
-experience with others (if anyone ever visits).</p>
-<h2 id="setup-hexo">Setup Hexo</h2>
-<p>In the following, I will briefly talk about how to set up Hexo and
-deploy it on GitHub and how to use it.</p>
-<h3 id="install">Install</h3>
+    <title>setup IME for Sogou Pinyin</title>
+    <url>/2022/07/12/setup-IME-for-Sogou-Pinyin/</url>
+    <content><![CDATA[<p>As a native Chinese speaker, I sometimes need to type Chinese and
+thus need a Chinese input method editor (IME) on my Windows. The one
+that's most popular in China is Sogou. The installation and usage is
+straightforward. Yet itself has a lot of key bindings that I'd never
+use, and those key bindings conflict with vscode shortcuts (since vscode
+has <strong>a lot of</strong> shortcuts). So this post is about how to
+disable those shortcuts, and how to set up different IME for different
+applications, a nice feature that Windows provides</p>
+<p>Environment: Windows 10</p>
+<h2 id="sogou-settings">Sogou Settings</h2>
 <ol type="1">
-<li><p>install node.js</p></li>
-<li><p>open terminal</p>
-<ol type="1">
-<li><code>npm install hexo-cli -g</code> to install hexo</li>
-<li><code>mkdir</code><em><code>directory</code></em> to create a new
-directory for a new Hexo project</li>
-<li><code>cd</code><em><code>directory</code></em> to enter the new
-directory</li>
-<li><code>hexo init</code> to initialize a new Hexo project</li>
-<li><code>hexo server</code> to start a server on a local host (hexo s
-for short)</li>
-<li><code>hexo new</code><em><code>post_name</code></em> to create a new
-post (hexo n for short)</li>
-<li><code>hexo clean</code> to clean the static files</li>
-<li><code>hexo generate</code> to generate new static files</li>
-<li><code>npm install hexo-deployer-git --save</code> to install the git
-deployer</li>
-</ol></li>
-<li><p>create a new repository on GitHub, the name must be
-<code>githubusername.github.io</code></p></li>
-<li><p>in the _config.yml file, and modify the <strong>deploy</strong>**
-section:</p>
-<p><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">https://oauth2:yourtoken@github.com/*****.github.io</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure></p>
-<p>remember <strong>not</strong> to include <em>yourtoken</em> in a
-public repository.</p></li>
-<li><p>run <code>hexo deploy</code> in terminal to deploy to GitHub
-(hexo d for short)</p></li>
-<li><p>now you can access your blog at
-<code>https://githubusername.github.io</code> (wait for a few minutes if
-it doesn't work)</p></li>
+<li>open settings of Sogou by right-clicking on the icon in language
+bar</li>
+<li>[optional] <em>常用</em> -&gt; <em>默认状态</em>, select
+<em>隐藏状态栏</em></li>
+<li>[optional] <em>按键</em>, unselect <em>系统功能快捷键</em></li>
 </ol>
-<h3 id="usage">Usage</h3>
-<ul>
-<li><code>hexo n "title"</code>: create a new post</li>
-<li><code>hexo s</code>: start a server in a local host</li>
-<li><code>hexo c</code>: clean the static files</li>
-<li><code>hexo g</code>: generate the static files</li>
-<li><code>hexo d</code>: deploy to GitHub</li>
-</ul>
-<h2 id="reference">Reference</h2>
-<ul>
-<li><a
-href="https://www.bilibili.com/video/BV1Yb411a7ty?spm_id_from=333.999.0.0&amp;vd_source=99a1bb3a7187eeea1a5ee8e957c968a7">Step-by-step
-Hexo installation guide (Chinese)</a></li>
-<li><a
-href="https://www.youtube.com/watch?v=Kt7u5kr_P5o&amp;list=PLLAZ4kZ9dFpOMJR6D25ishrSedvsguVSm">Hexo
-Youtube Tutorial</a></li>
-<li><a href="https://www.markdownguide.org/basic-syntax/">Markdown Basic
-Syntax</a></li>
-</ul>
+<h2 id="windows-settings">Windows Settings</h2>
+<ol type="1">
+<li>open Windows settings, go to <em>Time &amp; Language</em> -&gt;
+<em>Language</em> -&gt; <em>Spelling, typing, &amp; keyboard
+settings</em> -&gt; <em>Advanced keyboard settings</em></li>
+<li>choose the default input method</li>
+<li>choose <em>Let me use a different input method for each app
+window</em></li>
+<li>click <em>Input language hot keys</em>, disable any key binding that
+you don't want to use</li>
+</ol>
 ]]></content>
       <categories>
         <category>setup</category>
-        <category>guide</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
-        <tag>tutorial</tag>
-        <tag>framework</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Why can&#39;t variable names start with numbers</title>
-    <url>/2022/07/08/Why-can-t-variable-names-start-with-numbers/</url>
-    <content><![CDATA[<p>Almost all programming languages I have seen so far don't allow me to
-start variable names with numbers. So I search it up, and found on
-StackOverflow that the reason is quite simple:</p>
-<ol type="1">
-<li><p>string of digits would be a valid identifier</p>
-<p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="number">1</span> = <span class="number">2</span>;</span><br></pre></td></tr></table></figure></p></li>
-<li><p>if you allow the format of digits + alpha, then the following
-would still cause the problem:</p>
-<p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="number">1f</span> = <span class="number">2</span>;</span><br><span class="line"><span class="type">float</span> a = <span class="number">1f</span>;  <span class="comment">// a is 1.0 or 2.0?</span></span><br></pre></td></tr></table></figure></p></li>
-</ol>
-<h2 id="reference">Reference</h2>
-<ul>
-<li><a
-href="https://stackoverflow.com/a/342192/13720936">StackOverflow</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>question</category>
-      </categories>
-      <tags>
-        <tag>variable</tag>
-        <tag>naming convention</tag>
+        <tag>input method</tag>
+        <tag>chinese</tag>
       </tags>
   </entry>
   <entry>
@@ -701,43 +741,69 @@ class="uri">https://www.howtogeek.com/devops/how-does-git-reset-actually-work-so
       </tags>
   </entry>
   <entry>
-    <title>setup IME for Sogou Pinyin</title>
-    <url>/2022/07/12/setup-IME-for-Sogou-Pinyin/</url>
-    <content><![CDATA[<p>As a native Chinese speaker, I sometimes need to type Chinese and
-thus need a Chinese input method editor (IME) on my Windows. The one
-that's most popular in China is Sogou. The installation and usage is
-straightforward. Yet itself has a lot of key bindings that I'd never
-use, and those key bindings conflict with vscode shortcuts (since vscode
-has <strong>a lot of</strong> shortcuts). So this post is about how to
-disable those shortcuts, and how to set up different IME for different
-applications, a nice feature that Windows provides</p>
-<p>Environment: Windows 10</p>
-<h2 id="sogou-settings">Sogou Settings</h2>
+    <title>Java equality operator</title>
+    <url>/2022/07/20/Java-equality-operator/</url>
+    <content><![CDATA[<ul>
+<li><code>==</code> only compares if two objects are pointing to the
+same address (similar to the Python "is" keyword)</li>
+<li><code>equals()</code> method is used to compare if two objects'
+content (or other user-defined behavior) are equal</li>
+<li>primitive type doesn't have methods, so they can only be compared
+using the <code>==</code> operator. If two primitive types have the same
+value, they are pointing to the same location in the memory, therefore
+sharing the same address, and that's why the <code>==</code> operator
+works. When comparing a primitive type to a non-primitive type, Java
+will unbox the non-primitive type to a primitive type, and then compare
+the two primitive types.</li>
+</ul>
+<h2 id="example">Example</h2>
 <ol type="1">
-<li>open settings of Sogou by right-clicking on the icon in language
-bar</li>
-<li>[optional] <em>常用</em> -&gt; <em>默认状态</em>, select
-<em>隐藏状态栏</em></li>
-<li>[optional] <em>按键</em>, unselect <em>系统功能快捷键</em></li>
+<li><p>primitive (decimal) and BigDecimal</p>
+<p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">float</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">10000000000000000000f</span>;</span><br><span class="line"><span class="type">float</span> <span class="variable">b</span> <span class="operator">=</span> a + <span class="number">1</span>;</span><br><span class="line">System.out.println(a == b);  <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line"><span class="type">float</span> <span class="variable">c</span> <span class="operator">=</span> <span class="number">0.2f</span>;</span><br><span class="line"><span class="type">double</span> <span class="variable">d</span> <span class="operator">=</span> <span class="number">0.2</span>;</span><br><span class="line">System.out.println(c == d);</span><br><span class="line">System.out.println(c);</span><br><span class="line">System.out.println(d);</span><br></pre></td></tr></table></figure></p>
+<p>The reason is related to the underlying representation of
+floating-point numbers. To avoid that, use BigDecimal class.</p>
+<p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">BigDecimal</span> <span class="variable">a</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BigDecimal</span>(<span class="number">0.3</span>);</span><br><span class="line"><span class="type">BigDecimal</span> <span class="variable">b</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BigDecimal</span>(<span class="number">0.2</span>);</span><br><span class="line">System.out.println(a.subtract(b));  <span class="comment">// 0.099999999999999977795539507496869191527366638183593750</span></span><br><span class="line"></span><br><span class="line"><span class="type">BigDecimal</span> <span class="variable">c</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BigDecimal</span>(Double.toString(<span class="number">0.3</span>));</span><br><span class="line"><span class="type">BigDecimal</span> <span class="variable">d</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BigDecimal</span>(Double.toString(<span class="number">0.2</span>));</span><br><span class="line">System.out.println(c.subtract(d));  <span class="comment">// 0.1</span></span><br><span class="line"></span><br><span class="line"><span class="type">BigDecimal</span> <span class="variable">e</span> <span class="operator">=</span> BigDecimal.valueOf(<span class="number">0.3</span>);</span><br><span class="line"><span class="type">BigDecimal</span> <span class="variable">f</span> <span class="operator">=</span> BigDecimal.valueOf(<span class="number">0.2</span>);</span><br><span class="line">System.out.println(e.subtract(f));  <span class="comment">// 0.1</span></span><br></pre></td></tr></table></figure></p>
+<p>"The results of <code>BigDecimal(double val)</code> can be somewhat
+unpredictable" according to the official documentation. The best way to
+do it is using a String or using the <code>valueOf</code> method which
+calls the toString method inside.</p></li>
+<li><p>String</p>
+<p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">s1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">String</span>(<span class="string">&quot;abc&quot;</span>);</span><br><span class="line"><span class="type">String</span> <span class="variable">s2</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;</span><br><span class="line">System.out.println(s1 == s2);  <span class="comment">// false</span></span><br><span class="line">System.out.println(s1.equals(s2));  <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line"><span class="type">String</span> <span class="variable">s3</span> <span class="operator">=</span> s1.intern();</span><br><span class="line">System.out.println(s2 == s3);  <span class="comment">// true</span></span><br></pre></td></tr></table></figure></p>
+<p>When Java runs <code>new String("abc")</code>, it actually creates
+two objects: <code>"abc"</code> which will be stored in String Pool, and
+a String object which will be stored in Heap. Thus comparing s1 and s2
+is comparing two different objects reference. However,
+<code>intern()</code> method returns the reference to the String Pool,
+and that's why s1 and s3 are equal.</p></li>
+<li><p>Integer</p>
+<p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">Integer</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">100</span>;</span><br><span class="line"><span class="type">Integer</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">100</span>;</span><br><span class="line">System.out.println(a == b);  <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line"><span class="type">Integer</span> <span class="variable">a2</span> <span class="operator">=</span> <span class="number">1000</span>;</span><br><span class="line"><span class="type">Integer</span> <span class="variable">b2</span> <span class="operator">=</span> <span class="number">1000</span>;</span><br><span class="line">System.out.println(a2 == b2);  <span class="comment">// false</span></span><br><span class="line"></span><br><span class="line"><span class="type">Integer</span> <span class="variable">a3</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Integer</span>(<span class="number">100</span>);</span><br><span class="line"><span class="type">Integer</span> <span class="variable">b3</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Integer</span>(<span class="number">100</span>);</span><br><span class="line">System.out.println(a3 == b3);  <span class="comment">// false</span></span><br></pre></td></tr></table></figure></p>
+<p>There is a <code>valueOf(int i)</code> method for the Integer class,
+which returns a cached Integer object if the value is between -128 and
+127. However, creating an Integer object directly would not use the
+cached object.</p>
+<p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">Integer</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">10</span>;</span><br><span class="line"><span class="type">float</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">10f</span>;</span><br><span class="line">System.out.println(a.equals(b));  <span class="comment">// false</span></span><br></pre></td></tr></table></figure></p>
+<p>The <code>Integer.equals(Object obj)</code> method always returns
+false if obj is not an Integer object.</p></li>
 </ol>
-<h2 id="windows-settings">Windows Settings</h2>
-<ol type="1">
-<li>open Windows settings, go to <em>Time &amp; Language</em> -&gt;
-<em>Language</em> -&gt; <em>Spelling, typing, &amp; keyboard
-settings</em> -&gt; <em>Advanced keyboard settings</em></li>
-<li>choose the default input method</li>
-<li>choose <em>Let me use a different input method for each app
-window</em></li>
-<li>click <em>Input language hot keys</em>, disable any key binding that
-you don't want to use</li>
-</ol>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a
+href="https://www.bilibili.com/video/BV1yT411G7ku?p=2&amp;vd_source=99a1bb3a7187eeea1a5ee8e957c968a7"
+class="uri">https://www.bilibili.com/video/BV1yT411G7ku?p=2&amp;vd_source=99a1bb3a7187eeea1a5ee8e957c968a7</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/52710835"
+class="uri">https://zhuanlan.zhihu.com/p/52710835</a></li>
+<li><a href="https://mp.weixin.qq.com/s/EHNlUIjEhTgp2Q7JT9pscQ"
+class="uri">https://mp.weixin.qq.com/s/EHNlUIjEhTgp2Q7JT9pscQ</a></li>
+</ul>
 ]]></content>
       <categories>
-        <category>setup</category>
+        <category>programming</category>
+        <category>issue</category>
+        <category>java</category>
       </categories>
       <tags>
-        <tag>input method</tag>
-        <tag>chinese</tag>
+        <tag>Java</tag>
+        <tag>issue</tag>
       </tags>
   </entry>
 </search>

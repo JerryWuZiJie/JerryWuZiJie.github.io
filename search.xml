@@ -806,4 +806,48 @@ class="uri">https://mp.weixin.qq.com/s/EHNlUIjEhTgp2Q7JT9pscQ</a></li>
         <tag>issue</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Java replace and replaceAll</title>
+    <url>/2022/07/20/Java-replace-and-replaceAll/</url>
+    <content><![CDATA[<p>Both <code>replace</code> and <code>replaceAll</code> methods will
+replace all matches in the String. The difference is that
+<code>replaceAll</code> uses the regular expression, while
+<code>replace</code> just use the String literal.</p>
+<p>What if you only want to replace only the first match? Use the
+<code>replaceFirst</code> method.</p>
+]]></content>
+      <categories>
+        <category>programming</category>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java String, StringBuffer, StringBuilder</title>
+    <url>/2022/07/20/Java-String-StringBuffer-StringBuilder/</url>
+    <content><![CDATA[<p><code>String</code> is immutable. When you try to change the value of
+a <code>String</code>, it actually creates a new <code>String</code>
+object. <code>StringBuffer</code> and <code>StringBuilder</code> are
+mutable, while <code>StringBuilder</code> is thread-safe and
+<code>StringBuffer</code> is not.</p>
+<p>BTW, String is not strictly immutable, one can change its value by
+the following way:</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">s</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">Field</span> <span class="variable">value</span> <span class="operator">=</span> s.getClass().getDeclaredField(<span class="string">&quot;value&quot;</span>);</span><br><span class="line">value.setAccessible(<span class="literal">true</span>);</span><br><span class="line">value.set(s, <span class="string">&quot;abcd&quot;</span>.toCharArray());</span><br><span class="line"></span><br><span class="line">System.out.println(s);  <span class="comment">// abcd</span></span><br></pre></td></tr></table></figure>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a
+href="https://www.bilibili.com/video/BV1yT411G7ku?p=1&amp;vd_source=99a1bb3a7187eeea1a5ee8e957c968a7"
+class="uri">https://www.bilibili.com/video/BV1yT411G7ku?p=1&amp;vd_source=99a1bb3a7187eeea1a5ee8e957c968a7</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>programming</category>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
 </search>

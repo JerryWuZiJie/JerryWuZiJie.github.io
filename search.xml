@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Install IDEA</title>
+    <url>/2022/07/08/Install-IDEA/</url>
+    <content><![CDATA[<p><a href="https://www.jetbrains.com/idea/">Intellij IDEA</a> is one of
+the most popular Java IDE. This post is going to talk about how to
+install IDEA and set it up.</p>
+<ol type="1">
+<li>go to the <a
+href="https://www.jetbrains.com/idea/download/#section=windows">official
+website</a> and download the one that matches your system. Note that for
+students, you can down the Ultimate version for free, yet the community
+version would be enough.</li>
+<li>install it as prompted.</li>
+<li>create a new project.</li>
+<li>right-click on <code>src</code> folder, and select <code>New</code>
+-&gt; <code>Java Class</code>.</li>
+<li>type psvm, and IDEA will create the main function for you</li>
+<li>type sout, and IDEA will create System.out.println for you</li>
+</ol>
+]]></content>
+      <categories>
+        <category>programming</category>
+        <category>setup</category>
+        <category>Java</category>
+        <category>guide</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>IDE</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo theme: NexT</title>
     <url>/2022/07/07/Hexo-theme-next/</url>
     <content><![CDATA[<h2 id="install">install</h2>
@@ -279,37 +310,6 @@ Getting Started</a></li>
       </tags>
   </entry>
   <entry>
-    <title>Install IDEA</title>
-    <url>/2022/07/08/Install-IDEA/</url>
-    <content><![CDATA[<p><a href="https://www.jetbrains.com/idea/">Intellij IDEA</a> is one of
-the most popular Java IDE. This post is going to talk about how to
-install IDEA and set it up.</p>
-<ol type="1">
-<li>go to the <a
-href="https://www.jetbrains.com/idea/download/#section=windows">official
-website</a> and download the one that matches your system. Note that for
-students, you can down the Ultimate version for free, yet the community
-version would be enough.</li>
-<li>install it as prompted.</li>
-<li>create a new project.</li>
-<li>right-click on <code>src</code> folder, and select <code>New</code>
--&gt; <code>Java Class</code>.</li>
-<li>type psvm, and IDEA will create the main function for you</li>
-<li>type sout, and IDEA will create System.out.println for you</li>
-</ol>
-]]></content>
-      <categories>
-        <category>programming</category>
-        <category>setup</category>
-        <category>java</category>
-        <category>guide</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>IDE</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java Hello World!</title>
     <url>/2022/07/08/Java-Hello-World/</url>
     <content><![CDATA[<p>This post demonstrates how to write a simple Java program.</p>
@@ -340,7 +340,7 @@ compiles the source code into <code>.class</code> files when you run
 ]]></content>
       <categories>
         <category>programming</category>
-        <category>java</category>
+        <category>Java</category>
       </categories>
       <tags>
         <tag>Java</tag>
@@ -406,12 +406,12 @@ href="https://stackoverflow.com/a/16305526/13720936">StackOverflow</a></li>
       <categories>
         <category>programming</category>
         <category>setup</category>
-        <category>java</category>
+        <category>Java</category>
         <category>guide</category>
       </categories>
       <tags>
-        <tag>tutorial</tag>
         <tag>Java</tag>
+        <tag>tutorial</tag>
       </tags>
   </entry>
   <entry>
@@ -460,7 +460,7 @@ class="uri">https://www.bilibili.com/video/BV1yT411G7ku?p=1&amp;vd_source=99a1bb
 ]]></content>
       <categories>
         <category>programming</category>
-        <category>java</category>
+        <category>Java</category>
       </categories>
       <tags>
         <tag>Java</tag>
@@ -524,8 +524,8 @@ class="uri">https://mp.weixin.qq.com/s/EHNlUIjEhTgp2Q7JT9pscQ</a></li>
 ]]></content>
       <categories>
         <category>programming</category>
+        <category>Java</category>
         <category>issue</category>
-        <category>java</category>
       </categories>
       <tags>
         <tag>Java</tag>
@@ -544,7 +544,7 @@ replace all matches in the String. The difference is that
 ]]></content>
       <categories>
         <category>programming</category>
-        <category>java</category>
+        <category>Java</category>
       </categories>
       <tags>
         <tag>Java</tag>
@@ -584,7 +584,7 @@ in the URL.</p>
 <h4 id="scaffolds">scaffolds</h4>
 <p>The scaffolds folder controls the default layout of the new file. You
 can create more Markdown files with a different name and use
-<code>hexo n</code><em><code>scaffold_name</code></em> to create a new
+<code>hexo n</code> <em><code>scaffold_name</code></em> to create a new
 file with that type in the `source/_posts`` folder.</p>
 <h3 id="front-matter">front matter</h3>
 <p>Front matter looks like the following on the top of the Markdown
@@ -665,6 +665,29 @@ Images to Hexo Posts with Markdown</a></li>
       </tags>
   </entry>
   <entry>
+    <title>Texts too small in 4k display on Windows</title>
+    <url>/2022/08/08/Texts-too-small-in-4k-display-on-Windows/</url>
+    <content><![CDATA[<p>The texts and display will be very small if the resolution is too
+high on Windows. One way to fix this is to change the system scaling.
+Yet some software will still stay the same.</p>
+<p>To solve this, right click on the <strong><em>exe</em></strong> file,
+choose <strong>Properties</strong>, click the
+<strong>Compatibility</strong> tab -&gt; <strong>Change high DPI
+settings</strong>, select <strong>Override high DPI scaling
+behavior</strong>, scaling performed by <strong>System
+(Enhanced)</strong>.</p>
+<h2 id="reference">Reference</h2>
+<p><a href="https://g.pconline.com.cn/x/1491/14914582.html"
+class="uri">https://g.pconline.com.cn/x/1491/14914582.html</a></p>
+]]></content>
+      <categories>
+        <category>issue</category>
+      </categories>
+      <tags>
+        <tag>issue</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>My first post using hexo framework for blog</title>
     <url>/2022/07/04/My-first-post-using-hexo-framework-for-blog/</url>
     <content><![CDATA[<p>Hi, this is Jerry (Zijie) Wu! I decided to start writing blogs. And
@@ -742,29 +765,6 @@ Syntax</a></li>
       </tags>
   </entry>
   <entry>
-    <title>Texts too small in 4k display on Windows</title>
-    <url>/2022/08/08/Texts-too-small-in-4k-display-on-Windows/</url>
-    <content><![CDATA[<p>The texts and display will be very small if the resolution is too
-high on Windows. One way to fix this is to change the system scaling.
-Yet some software will still stay the same.</p>
-<p>To solve this, right click on the <strong><em>exe</em></strong> file,
-choose <strong>Properties</strong>, click the
-<strong>Compatibility</strong> tab -&gt; <strong>Change high DPI
-settings</strong>, select <strong>Override high DPI scaling
-behavior</strong>, scaling performed by <strong>System
-(Enhanced)</strong>.</p>
-<h2 id="reference">Reference</h2>
-<p><a href="https://g.pconline.com.cn/x/1491/14914582.html"
-class="uri">https://g.pconline.com.cn/x/1491/14914582.html</a></p>
-]]></content>
-      <categories>
-        <category>issue</category>
-      </categories>
-      <tags>
-        <tag>issue</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Why can&#39;t variable names start with numbers</title>
     <url>/2022/07/08/Why-can-t-variable-names-start-with-numbers/</url>
     <content><![CDATA[<p>Almost all programming languages I have seen so far don't allow me to
@@ -838,6 +838,38 @@ class="uri">https://blog.csdn.net/nyist_zxp/article/details/119887324</a></li>
       </categories>
       <tags>
         <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>lru_cache issue</title>
+    <url>/2022/08/15/lru-cache-issue/</url>
+    <content><![CDATA[<p>when using the <code>lru_cache</code> from the <code>functools</code>
+module, many like to set <code>maxsize=None</code>. However, when
+decorating a method with <code>lru_cache</code>, the caches wouldn't get
+destroyed when the object is deleted by the garbage collector. This
+would create the problem that the cache would keep growing and
+growing.</p>
+<p>The reason behind this is the decorator makes the method a callable
+class attribute. Therefore it will only get deleted when the class is
+deleted, not the object. To avoid this, one can create a private method,
+and create a callable instance attribute when initializing by the
+following code:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">self.method_name = functools.lru_cache(maxsize=<span class="literal">None</span>)(self._method_name)</span><br></pre></td></tr></table></figure>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a
+href="https://www.youtube.com/watch?v=sVjtp6tGo0g&amp;ab_channel=anthonywritescode"
+class="uri">https://www.youtube.com/watch?v=sVjtp6tGo0g&amp;ab_channel=anthonywritescode</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>programming</category>
+        <category>issue</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>issue</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>

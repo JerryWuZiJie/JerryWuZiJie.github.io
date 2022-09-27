@@ -16,6 +16,9 @@ backup (223.5.5.5)</p></li>
 <li><p>Add the following line to the hosts file:</p></li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">140.82.112.5 github.com</span><br><span class="line">140.82.112.5 api.github.com</span><br></pre></td></tr></table></figure>
+<p>Another cause of this problem is for those who have installed
+<strong>Watt Toolkit</strong>, it modifies the hosts. So just delete
+those lines in the hosts file and it should work.</p>
 <p># Extra tip: GitHub Copilot is free for verified students</p>
 <h2 id="reference">Reference</h2>
 <p><a href="https://blog.csdn.net/qq_42200700/article/details/125784101"
@@ -768,7 +771,7 @@ it doesn't work)</p></li>
 <ul>
 <li><code>hexo n "title"</code>: create a new post</li>
 <li><code>hexo s</code>: start a server in a local host</li>
-<li><code>hexo c</code>: clean the static files</li>
+<li><code>hexo cl</code>: clean the static files</li>
 <li><code>hexo g</code>: generate the static files</li>
 <li><code>hexo d</code>: deploy to GitHub</li>
 </ul>

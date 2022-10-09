@@ -1005,4 +1005,33 @@ class="uri">https://www.cnblogs.com/lansan0701/p/10600220.html</a></p>
         <tag>issue</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Git remote issue</title>
+    <url>/2022/10/09/Git-remote-issue/</url>
+    <content><![CDATA[<p>When I do a git pull today (in China), it took a while (about 10
+secs) and I got
+<code>fatal: unable to access 'xxxxxx': SSL certificate problem: unable to get local issuer certificate</code>.
+I tried to disable SSL verification by</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global http.sslVerify <span class="string">&quot;false&quot;</span></span><br></pre></td></tr></table></figure>
+<p>But I then got
+<code>fatal: unable to access 'xxxxxx': Failed to connect to github.com port 443 after 21077 ms: Timed out</code></p>
+<p>Later on, I realized that I've opened the VPN, and even if I closed
+it the proxy setting is messed up. So to reset, one can do</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global --<span class="built_in">unset</span> http.proxy</span><br><span class="line">git config --global --<span class="built_in">unset</span> https.proxy</span><br></pre></td></tr></table></figure>
+<p>Then I can do <code>git pull</code> and <code>git push</code> without
+any problem.</p>
+<h2 id="reference">Reference</h2>
+<p><a href="https://blog.csdn.net/m0_66695483/article/details/125036055"
+class="uri">https://blog.csdn.net/m0_66695483/article/details/125036055</a></p>
+<p><a
+href="https://blog.csdn.net/csdn565973850/article/details/125785692"
+class="uri">https://blog.csdn.net/csdn565973850/article/details/125785692</a></p>
+]]></content>
+      <categories>
+        <category>issue</category>
+      </categories>
+      <tags>
+        <tag>issue</tag>
+      </tags>
+  </entry>
 </search>

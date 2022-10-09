@@ -987,4 +987,22 @@ class="uri">https://www.howtogeek.com/devops/how-does-git-reset-actually-work-so
         <tag>git</tag>
       </tags>
   </entry>
+  <entry>
+    <title>printing \ufeff in Python</title>
+    <url>/2022/10/09/printing-ufeff-in-Python/</url>
+    <content><![CDATA[<p>When using utf-8 to decode in Python, some files will include
+<code>\ufeff</code> at the beginning of the file.</p>
+<p>This is because the file is encoded in utf-8 with BOM (Byte Order
+Mark). So we need to use <code>utf-8-sig</code> to decode the file.</p>
+<h2 id="reference">Reference</h2>
+<p><a href="https://www.cnblogs.com/lansan0701/p/10600220.html"
+class="uri">https://www.cnblogs.com/lansan0701/p/10600220.html</a></p>
+]]></content>
+      <categories>
+        <category>issue</category>
+      </categories>
+      <tags>
+        <tag>issue</tag>
+      </tags>
+  </entry>
 </search>
